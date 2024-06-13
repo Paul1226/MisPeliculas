@@ -1,19 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../sections/Header.astro";
+import Nav from "../sections/Nav.astro";
 ---
 
 <Layout title="MisPeliculas | Proyecto">
-	<section class="section">
+	<section class="section w-full h-[94dvh] rounded-xl overflow-hidden">
 		<Header />
-		<main></main>
+		<main class="w-full relative">
+			<Nav />
+
+		</main>
 	</section>
 </Layout>
 
 <style>
 	.section {
 		display: grid;
-		grid-template-columns: 1fr 5fr;
-		grid-template-areas: 'header header' 'nav main';
+		grid-template-rows: auto 1fr;
 	}
 </style>
