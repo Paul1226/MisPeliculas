@@ -2,14 +2,10 @@
 import Svg from "../components/Svg.astro";
 ---
 
-<header class="flex items-center gap-4 p-2 rounded-t-xl bg-sky-50/10 shadow-lg [grid-area:header]">
-  <div class="logo">
-    <a class="text-2xl font-extrabold hidden md:block" href="/">Mis<span class="text-sky-400">Peliculas</span><span class="text-xs">.com</span></a>
-    <a class="text-5xl font-extrabold text-sky-400 md:hidden" href="/">P</a>
-  </div>
+<header class="flex items-center gap-4 p-2 bg-sky-50/10 shadow-lg relative z-10">
   <article class="flex items-center justify-between w-full">
-    <a class="" href="#">
-      <Svg class="w-6 fill-sky-200">
+    <a class="menu" href="#">
+      <Svg class="w-6 fill-sky-100 transition-colors duration-300 ease-in-out">
         <path
           d="M480 134.333H170.667C166.158 134.333 161.834 132.542 158.646 129.354C155.458 126.166 153.667 121.842 153.667 117.333C153.667 112.825 155.458 108.501 158.646 105.312C161.834 102.124 166.158 100.333 170.667 100.333H480C484.509 100.333 488.833 102.124 492.021 105.312C495.209 108.501 497 112.825 497 117.333C497 121.842 495.209 126.166 492.021 129.354C488.833 132.542 484.509 134.333 480 134.333Z"
         ></path>
@@ -30,11 +26,17 @@ import Svg from "../components/Svg.astro";
         ></path>
       </Svg>
     </a>
+
+    <div class="logo">
+      <a class="text-2xl font-extrabold hidden md:block" href="/">Mis<span class="text-sky-400">Peliculas</span><span class="text-xs">.com</span></a>
+      <!-- <a class="text-5xl font-extrabold text-sky-400 md:hidden" href="/">P</a> -->
+    </div>
+
     <div class="flex items-center justify-center gap-3 relative">
       <button
         class="icon flex items-center justify-center absolute right-0 cursor-pointer w-9 h-9 outline-none [border-style:none] rounded-full [pointer-events:painted] bg-transparent transition-all duration-200 ease-in-out"
       >
-        <Svg class="w-4 fill-sky-200">
+        <Svg class="w-4 fill-sky-100">
           <path
             d="M504.352,459.061l-99.435-99.477c74.402-99.427,54.115-240.344-45.312-314.746S119.261-9.277,44.859,90.15   S-9.256,330.494,90.171,404.896c79.868,59.766,189.565,59.766,269.434,0l99.477,99.477c12.501,12.501,32.769,12.501,45.269,0   c12.501-12.501,12.501-32.769,0-45.269L504.352,459.061z M225.717,385.696c-88.366,0-160-71.634-160-160s71.634-160,160-160   s160,71.634,160,160C385.623,314.022,314.044,385.602,225.717,385.696z"
           ></path>
@@ -56,8 +58,26 @@ import Svg from "../components/Svg.astro";
     width: 200px;
     background-color: transparent;
     border-bottom:1.5px solid;
-    transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+    transition: all 500ms cubic-bezier(0, 0.11, 0.35, 1.32);
 
     @apply border-sky-400 placeholder:text-sky-50/30 md:w-[360px];
   }
+
+  .menu.active svg{
+    @apply fill-sky-400;
+  }
+
 </style>
+
+<script>
+  const $linkMenu = document.querySelector('.menu')
+  const $nav = document.querySelector('.nav')
+
+  $linkMenu?.addEventListener('click', (e)=>{
+    e.preventDefault()
+
+    $linkMenu?.classList.toggle('active')
+    $nav?.classList.toggle('active')
+
+  })
+</script>
