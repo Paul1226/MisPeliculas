@@ -1,9 +1,19 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import Header from "../sections/Header.astro";
 ---
 
 <Layout title="MisPeliculas | Proyecto">
-	<main>
-		
-	</main>
+	<section class="section">
+		<Header />
+		<main></main>
+	</section>
 </Layout>
+
+<style>
+	.section {
+		display: grid;
+		grid-template-columns: 1fr 5fr;
+		grid-template-areas: 'header header' 'nav main';
+	}
+</style>

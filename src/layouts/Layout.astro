@@ -17,10 +17,11 @@ import "@fontsource-variable/manrope";
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="bg-sky-950 text-sky-100">
 		<slot />
 	</body>
 </html>
@@ -34,5 +35,6 @@ import "@fontsource-variable/manrope";
 
 	body {
 		font-family: "Manrope Variable", sans-serif;
+		padding: 1rem;
 	}
 </style>
