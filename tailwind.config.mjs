@@ -17,7 +17,11 @@ export default {
 					'900': '#0c4a6e',
 					'950': '#082f49',
 				},
+				'bgs':'#1F435C'
 
+			},
+			boxShadow: {
+				'l-lg': '8px 0px 10px #00000020',
 			}
 		},
 	},
