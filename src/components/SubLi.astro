@@ -1,0 +1,11 @@
+---
+interface Props {
+    subLink: string
+    name: string
+}
+const { subLink, name } = Astro.props
+---
+
+<li>
+    <a href={subLink} class="flex px-5 py-2 transition-colors duration-300 ease-in-out hover:bg-sky-200/10 truncate">{name}</a>
+</li>
