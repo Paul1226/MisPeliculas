@@ -1,0 +1,325 @@
+{
+    "movies": [
+      {
+        "title": "Avatar",
+        "year": 2009,
+        "director": "James Cameron",
+        "actors": ["Sam Worthington", "Zoe Saldana", "Sigourney Weaver"],
+        "genre": "Action, Adventure, Fantasy",
+        "synopsis": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+        "image": "https://m.media-amazon.com/images/I/61OUGpUfAyL._AC_SY679_.jpg",
+        "rating": 7.8
+      },
+      {
+        "title": "Avengers: Endgame",
+        "year": 2019,
+        "director": "Anthony Russo, Joe Russo",
+        "actors": ["Robert Downey Jr.", "Chris Evans", "Mark Ruffalo"],
+        "genre": "Action, Adventure, Drama",
+        "synopsis": "After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+        "image": "https://m.media-amazon.com/images/I/81ExhpBEbHL._AC_SY679_.jpg",
+        "rating": 8.4
+      },
+      {
+        "title": "Titanic",
+        "year": 1997,
+        "director": "James Cameron",
+        "actors": ["Leonardo DiCaprio", "Kate Winslet", "Billy Zane"],
+        "genre": "Drama, Romance",
+        "synopsis": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+        "image": "https://m.media-amazon.com/images/I/811lT7khIrL._AC_UY218_.jpg",
+        "rating": 7.9
+      },
+      {
+        "title": "Star Wars: Episode VII - The Force Awakens",
+        "year": 2015,
+        "director": "J.J. Abrams",
+        "actors": ["Daisy Ridley", "John Boyega", "Oscar Isaac"],
+        "genre": "Action, Adventure, Fantasy",
+        "synopsis": "As a new threat to the galaxy rises, Rey, a desert scavenger, and Finn, an ex-stormtrooper, must join Han Solo and Chewbacca to search for the one hope of restoring peace.",
+        "image": "https://m.media-amazon.com/images/I/91FDYb0ehmL._AC_UY218_.jpg",
+        "rating": 7.9
+      },
+      {
+        "title": "Avengers: Infinity War",
+        "year": 2018,
+        "director": "Anthony Russo, Joe Russo",
+        "actors": ["Robert Downey Jr.", "Chris Hemsworth", "Mark Ruffalo"],
+        "genre": "Action, Adventure, Sci-Fi",
+        "synopsis": "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
+        "image": "https://m.media-amazon.com/images/I/91HAJrnBx0L._AC_UY218_.jpg",
+        "rating": 8.4
+      },
+      {
+        "title": "Spider-Man: No Way Home",
+        "year": 2021,
+        "director": "Jon Watts",
+        "actors": ["Tom Holland", "Zendaya", "Benedict Cumberbatch"],
+        "genre": "Action, Adventure, Fantasy",
+        "synopsis": "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
+        "image": "https://m.media-amazon.com/images/I/81Yopa9w4yL._AC_UY218_.jpg",
+        "rating": 8.3
+      },
+      {
+        "title": "Jurassic World",
+        "year": 2015,
+        "director": "Colin Trevorrow",
+        "actors": ["Chris Pratt", "Bryce Dallas Howard", "Ty Simpkins"],
+        "genre": "Action, Adventure, Sci-Fi",
+        "synopsis": "A new theme park, built on the original site of Jurassic Park, creates a genetically modified hybrid dinosaur, the Indominus Rex, which escapes containment and goes on a killing spree.",
+        "image": "https://m.media-amazon.com/images/I/81bEk4cFbHL._AC_UY218_.jpg",
+        "rating": 7.0
+      },
+      {
+        "title": "The Lion King",
+        "year": 2019,
+        "director": "Jon Favreau",
+        "actors": ["Donald Glover", "Beyoncé", "Seth Rogen"],
+        "genre": "Animation, Adventure, Drama",
+        "synopsis": "After the murder of his father, a young lion prince flees his kingdom only to learn the true meaning of responsibility and bravery.",
+        "image": "https://m.media-amazon.com/images/I/81aLWmKrNVL._AC_UY218_.jpg",
+        "rating": 6.9
+      },
+      {
+        "title": "The Avengers",
+        "year": 2012,
+        "director": "Joss Whedon",
+        "actors": ["Robert Downey Jr.", "Chris Evans", "Scarlett Johansson"],
+        "genre": "Action, Adventure, Sci-Fi",
+        "synopsis": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
+        "image": "https://m.media-amazon.com/images/I/81lMrc8bBRL._AC_UY218_.jpg",
+        "rating": 8.0
+      },
+      {
+        "title": "Furious 7",
+        "year": 2015,
+        "director": "James Wan",
+        "actors": ["Vin Diesel", "Paul Walker", "Dwayne Johnson"],
+        "genre": "Action, Adventure, Thriller",
+        "synopsis": "Deckard Shaw seeks revenge against Dominic Toretto and his family for his comatose brother.",
+        "image": "https://m.media-amazon.com/images/I/81ClciXon2L._AC_UY218_.jpg",
+        "rating": 7.1
+      },
+      {
+        "title": "Frozen II",
+        "year": 2019,
+        "director": "Chris Buck, Jennifer Lee",
+        "actors": ["Kristen Bell", "Idina Menzel", "Josh Gad"],
+        "genre": "Animation, Adventure, Comedy",
+        "synopsis": "Anna, Elsa, Kristoff, Olaf, and Sven leave Arendelle to travel to an ancient, autumn-bound forest of an enchanted land. They set out to find the origin of Elsa's powers in order to save their kingdom.",
+        "image": "https://m.media-amazon.com/images/I/91ttPlXef0L._AC_UY218_.jpg",
+        "rating": 6.8
+      },
+      {
+        "title": "Avengers: Age of Ultron",
+        "year": 2015,
+        "director": "Joss Whedon",
+        "actors": ["Robert Downey Jr.", "Chris Hemsworth", "Mark Ruffalo"],
+        "genre": "Action, Adventure, Sci-Fi",
+        "synopsis": "When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's mightiest heroes to stop the villainous Ultron from enacting his terrible plan.",
+        "image": "https://m.media-amazon.com/images/I/91-IY2F3ArL._AC_UY218_.jpg",
+        "rating": 7.3
+      },
+      {
+        "title": "Black Panther",
+        "year": 2018,
+        "director": "Ryan Coogler",
+        "actors": ["Chadwick Boseman", "Michael B. Jordan", "Lupita Nyong'o"],
+        "genre": "Action, Adventure, Sci-Fi",
+        "synopsis": "T'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future and must confront a challenger from his country's past.",
+        "image": "https://m.media-amazon.com/images/I/81t5mOc1PeL._AC_UY218_.jpg",
+        "rating": 7.3
+      },
+      {
+        "title": "Harry Potter and the Deathly Hallows: Part 2",
+        "year": 2011,
+        "director": "David Yates",
+        "actors": ["Daniel Radcliffe", "Emma Watson", "Rupert Grint"],
+        "genre": "Adventure, Drama, Fantasy",
+        "synopsis": "Harry, Ron, and Hermione search for Voldemort's remaining Horcruxes in their effort to destroy the Dark Lord as the final battle rages on at Hogwarts.",
+        "image": "https://m.media-amazon.com/images/I/91yy1iDB8OL._AC_UY218_.jpg",
+        "rating": 8.1
+      },
+      {
+        "title": "Star Wars: Episode VIII - The Last Jedi",
+        "year": 2017,
+        "director": "Rian Johnson",
+        "actors": ["Daisy Ridley", "John Boyega", "Mark Hamill"],
+        "genre": "Action, Adventure, Fantasy",
+        "synopsis": "Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares for battle with the First Order.",
+        "image": "https://m.media-amazon.com/images/I/81xtAp7e77L._AC_UY218_.jpg",
+        "rating": 7.0
+      },
+      {
+        "title": "Jurassic World: Fallen Kingdom",
+        "year": 2018,
+        "director": "J.A. Bayona",
+        "actors": ["Chris Pratt", "Bryce Dallas Howard", "Rafe Spall"],
+        "genre": "Action, Adventure, Sci-Fi",
+        "synopsis": "When the island's dormant volcano begins roaring to life, Owen and Claire mount a campaign to rescue the remaining dinosaurs from this extinction-level event.",
+        "image": "https://m.media-amazon.com/images/I/81tSb2CYRoL._AC_UY218_.jpg",
+        "rating": 6.2
+      },
+      {
+        "title": "Frozen",
+        "year": 2013,
+        "director": "Chris Buck, Jennifer Lee",
+        "actors": ["Kristen Bell", "Idina Menzel", "Jonathan Groff"],
+        "genre": "Animation, Adventure, Comedy",
+        "synopsis": "When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.",
+        "image": "https://m.media-amazon.com/images/I/91FhnyvtjCL._AC_UY218_.jpg",
+        "rating": 7.4
+      },
+      {
+        "title": "Beauty and the Beast",
+        "year": 2017,
+        "director": "Bill Condon",
+        "actors": ["Emma Watson", "Dan Stevens", "Luke Evans"],
+        "genre": "Family, Fantasy, Musical",
+        "synopsis": "A selfish prince is cursed to become a monster for the rest of his life, unless he learns to fall in love with a beautiful young woman he keeps prisoner.",
+        "image": "https://m.media-amazon.com/images/I/91fU8TYkR4L._AC_UY218_.jpg",
+        "rating": 7.1
+      },
+      {
+        "title": "Venom",
+        "year": 2018,
+        "director": "Ruben Fleischer",
+        "actors": ["Tom Hardy", "Michelle Rodriguez", "Riz Ahmed"],
+        "genre": "Action, Horror, Sci-Fi",
+        "synopsis": "After finding a host body in investigative reporter Eddie Brock, the alien symbiote starts to bring people and their allies closer to the_elimination ofTARGET.",
+        "image": "https://m.media-amazon.com/images/I/91oaYOLSe3S._AC_UY218_.jpg",
+        "rating": 6.8
+      },
+      {
+        "title": "Incredibles 2",
+        "year": 2018,
+        "director": "Brad Bird",
+        "actors": ["Craig T. Nelson", "Holly Hunter", "Sarah Vowell"],
+        "genre": "Animation, Action, Adventure",
+        "synopsis": "The Incredibles family takes on a new mission, which involves a change in family roles: Bob Parr (Mr. Incredible) must manage the house while his wife Helen (Elastigirl) goes out to save the world.",
+        "image": "https://m.media-amazon.com/images/I/91+VySrmrfL._AC_UY218_.jpg",
+        "rating": 7.6
+      },
+      {
+        "title": "The Fate of the Furious",
+        "year": 2017,
+        "director": "F. Gary Gray",
+        "actors": ["Vin Diesel", "Jason Statham", "Dwayne Johnson"],
+        "genre": "Action, Adventure, Crime",
+        "synopsis": "When a mysterious woman seduces Dom into the world of crime and betrayal of those closest to him, the crew face trials that will test them as never before.",
+        "image": "https://m.media-amazon.com/images/I/818zLOmMUkL._AC_UY218_.jpg",
+        "rating": 6.7
+      },
+      {
+        "title": "Iron Man 3",
+        "year": 2013,
+        "director": "Shane Black",
+        "actors": ["Robert Downey Jr.", "Gwyneth Paltrow", "Don Cheadle"],
+        "genre": "Action, Adventure, Sci-Fi",
+        "synopsis": "When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.",
+        "image": "https://m.media-amazon.com/images/I/91JyaYilblL._AC_UL320_.jpg",
+        "rating": 7.1
+      },
+      {
+        "title": "Minions",
+        "year": 2015,
+        "director": "Kyle Balda, Pierre Coffin",
+        "actors": ["Sandra Bullock", "Jon Hamm", "Michael Keaton"],
+        "genre": "Animation, Adventure, Comedy",
+        "synopsis": "Minions Stuart, Kevin, and Bob are recruited by Scarlet Overkill, a supervillain who, alongside her inventor husband Herb, hatches a plot to take over the world.",
+        "image": "https://m.media-amazon.com/images/I/71n1rpeQrKL._AC_UY218_.jpg",
+        "rating": 6.4
+      },
+      {
+        "title": "Captain America: Civil War",
+        "year": 2016,
+        "director": "Anthony Russo, Joe Russo",
+        "actors": ["Chris Evans", "Robert Downey Jr.", "Scarlett Johansson"],
+        "genre": "Action, Adventure, Sci-Fi",
+        "synopsis": "Political interference in the Avengers' activities causes a rift between former allies Captain America and Iron Man.",
+        "image": "https://m.media-amazon.com/images/I/91QeHriyBcL._AC_UY218_.jpg",
+        "rating": 7.8
+      },
+      {
+        "title": "Aquaman",
+        "year": 2018,
+        "director": "James Wan",
+        "actors": ["Jason Momoa", "Amber Heard", "Willem Dafoe"],
+        "genre": "Action, Adventure, Fantasy",
+        "synopsis": "Arthur Curry, the human-born heir to the underwater kingdom of Atlantis, goes on a quest to prevent a war between the worlds of ocean and land.",
+        "image": "https://m.media-amazon.com/images/I/916WSgvze3L._AC_UY218_.jpg",
+        "rating": 6.9
+      },
+      {
+        "title": "The Lord of the Rings: The Return of the King",
+        "year": 2003,
+        "director": "Peter Jackson",
+        "actors": ["Elijah Wood", "Viggo Mortensen", "Ian McKellen"],
+        "genre": "Action, Adventure, Drama",
+        "synopsis": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+        "image": "https://m.media-amazon.com/images/I/91LAfx+AZhL._AC_UY218_.jpg",
+        "rating": 8.9
+      },
+      {
+        "title": "Skyfall",
+        "year": 2012,
+        "director": "Sam Mendes",
+        "actors": ["Daniel Craig", "Javier Bardem", "Naomie Harris"],
+        "genre": "Action, Adventure, Thriller",
+        "synopsis": "James Bond's loyalty to M is tested when her past comes back to haunt her. When MI6 comes under attack, 007 must track down and destroy the threat, no matter how personal the cost.",
+        "image": "https://m.media-amazon.com/images/I/91P7eK+4KmL._AC_UY218_.jpg",
+        "rating": 7.7
+      },
+      {
+        "title": "Transformers: Dark of the Moon",
+        "year": 2011,
+        "director": "Michael Bay",
+        "actors": ["Shia LaBeouf", "Rosie Huntington-Whiteley", "Tyrese Gibson"],
+        "genre": "Action, Adventure, Sci-Fi",
+        "synopsis": "The Autobots learn of a Cybertronian spacecraft hidden on the moon, and race against the Decepticons to reach it and to learn its secrets.",
+        "image": "https://m.media-amazon.com/images/I/91bxF4jgMTL._AC_UY218_.jpg",
+        "rating": 6.2
+      },
+      {
+        "title": "Captain Marvel",
+        "year": 2019,
+        "director": "Anna Boden, Ryan Fleck",
+        "actors": ["Brie Larson", "Samuel L. Jackson", "Ben Mendelsohn"],
+        "genre": "Action, Adventure, Sci-Fi",
+        "synopsis": "Carol Danvers becomes one of the universe's most powerful heroes when Earth is caught in the middle of a galactic war between two alien races.",
+        "image": "https://m.media-amazon.com/images/I/81e71LEqiVL._AC_UY218_.jpg",
+        "rating": 6.8
+      },
+      {
+        "title": "Spider-Man: Far From Home",
+        "year": 2019,
+        "director": "Jon Watts",
+        "actors": ["Tom Holland", "Zendaya", "Jake Gyllenhaal"],
+        "genre": "Action, Adventure, Sci-Fi",
+        "synopsis": "Following the events of Avengers: Endgame, Spider-Man must step up to take on new threats in a world that has changed forever.",
+        "image": "https://m.media-amazon.com/images/I/91A+eXyGmvL._AC_UY218_.jpg",
+        "rating": 7.4
+      },
+      {
+        "title": "Jurassic Park",
+        "year": 1993,
+        "director": "Steven Spielberg",
+        "actors": ["Sam Neill", "Laura Dern", "Jeff Goldblum"],
+        "genre": "Adventure, Sci-Fi, Thriller",
+        "synopsis": "During a preview tour, a theme park suffers a major power breakdown that allows its cloned dinosaur exhibits to run amok.",
+        "image": "https://m.media-amazon.com/images/I/7146s0GzEUL._AC_UY218_.jpg",
+        "rating": 8.1
+      },
+      {
+        "title": "Venom: Let There Be Carnage",
+        "year": 2021,
+        "director": "Ruben Fleischer",
+        "actors": ["Tom Hardy", "Michelle Rodriguez", "Riz Ahmed"],
+        "genre": "Action, Horror, Sci-Fi",
+        "synopsis": "After finding a host body in investigative reporter Eddie Brock, the alien symbiote starts to bring people and their allies closer to the_elimination ofTARGET.",
+        "image": "https://m.media-amazon.com/images/I/91me1m5qz4L._AC_UY218_.jpg",
+        "rating": 6.8
+      }
+    ]
+  }
+  
