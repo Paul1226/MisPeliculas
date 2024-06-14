@@ -8,7 +8,7 @@ import Main from "../sections/Main.astro";
 <Layout title="MisPeliculas | Proyecto">
 	<section class="section w-full h-[94dvh] rounded-xl overflow-hidden">
 		<Header />
-		<main class="w-full relative">
+		<main class="w-full relative main_content">
 			<Nav />
 			<Main />
 		</main>
@@ -19,5 +19,10 @@ import Main from "../sections/Main.astro";
 	.section {
 		display: grid;
 		grid-template-rows: auto 1fr;
+
+		.main_content {
+			display: grid;
+			grid-template-columns: auto 1fr;
+		}
 	}
 </style>
