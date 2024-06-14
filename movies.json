@@ -320,6 +320,188 @@
         "image": "https://m.media-amazon.com/images/I/91me1m5qz4L._AC_UY218_.jpg",
         "rating": 6.8
       }
+    ],
+    "series": [
+      {
+        "title": "Game of Thrones",
+        "year": 2011,
+        "creators": ["David Benioff", "D.B. Weiss"],
+        "actors": ["Emilia Clarke", "Peter Dinklage", "Kit Harington"],
+        "genre": "Action, Adventure, Drama",
+        "synopsis": "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
+        "image": "https://m.media-amazon.com/images/I/91wn+Av0LGL._AC_UY218_.jpg",
+        "rating": 9.3
+      },
+      {
+        "title": "Breaking Bad",
+        "year": 2008,
+        "creators": ["Vince Gilligan"],
+        "actors": ["Bryan Cranston", "Aaron Paul", "Anna Gunn"],
+        "genre": "Crime, Drama, Thriller",
+        "synopsis": "A high school chemistry teacher turned methamphetamine producer partners with a former student to secure his family's future.",
+        "image": "https://m.media-amazon.com/images/I/81Te1+KzW-L._AC_UY218_.jpg",
+        "rating": 9.5
+      },
+      {
+        "title": "Stranger Things",
+        "year": 2016,
+        "creators": ["Matt Duffer", "Ross Duffer"],
+        "actors": ["Millie Bobby Brown", "Finn Wolfhard", "Winona Ryder"],
+        "genre": "Drama, Fantasy, Horror",
+        "synopsis": "When a young boy disappears, his mother, a police chief, and his friends must confront terrifying supernatural forces in order to get him back.",
+        "image": "https://m.media-amazon.com/images/I/81Ld12DNDNL._AC_UY218_.jpg",
+        "rating": 8.7
+      },
+      {
+        "title": "The Witcher",
+        "year": 2019,
+        "creators": ["Lauren Schmidt Hissrich"],
+        "actors": ["Henry Cavill", "Freya Allan", "Anya Chalotra"],
+        "genre": "Action, Adventure, Drama",
+        "synopsis": "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.",
+        "image": "https://m.media-amazon.com/images/I/816PBiN8q5L._AC_UY218_.jpg",
+        "rating": 8.2
+      },
+      {
+        "title": "The Mandalorian",
+        "year": 2019,
+        "creators": ["Jon Favreau"],
+        "actors": ["Pedro Pascal", "Gina Carano", "Giancarlo Esposito"],
+        "genre": "Action, Adventure, Fantasy",
+        "synopsis": "The travels of a lone bounty hunter in the outer reaches of the galaxy, far from the authority of the New Republic.",
+        "image": "https://m.media-amazon.com/images/I/81tfKiNfztL._AC_UY218_.jpg",
+        "rating": 8.8
+      },
+      {
+        "title": "Friends",
+        "year": 1994,
+        "creators": ["David Crane", "Marta Kauffman"],
+        "actors": ["Jennifer Aniston", "Courteney Cox", "Lisa Kudrow"],
+        "genre": "Comedy, Romance",
+        "synopsis": "Follows the personal and professional lives of six twenty to thirty-something-year-old friends living in Manhattan.",
+        "image": "https://m.media-amazon.com/images/I/91eUTJInKkL._AC_UY218_.jpg",
+        "rating": 8.9
+      },
+      {
+        "title": "The Office",
+        "year": 2005,
+        "creators": ["Greg Daniels", "Ricky Gervais", "Stephen Merchant"],
+        "actors": ["Steve Carell", "Jenna Fischer", "John Krasinski"],
+        "genre": "Comedy",
+        "synopsis": "A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, and tedium.",
+        "image": "https://m.media-amazon.com/images/I/91d053F2aKL._AC_UY218_.jpg",
+        "rating": 8.9
+      },
+      {
+        "title": "Sherlock",
+        "year": 2010,
+        "creators": ["Mark Gatiss", "Steven Moffat"],
+        "actors": ["Benedict Cumberbatch", "Martin Freeman", "Una Stubbs"],
+        "genre": "Crime, Drama, Mystery",
+        "synopsis": "A modern update finds the famous sleuth and his doctor partner solving crime in 21st century London.",
+        "image": "https://m.media-amazon.com/images/I/91Mdaxz+a0L._AC_UY218_.jpg",
+        "rating": 9.1
+      },
+      {
+        "title": "The Walking Dead",
+        "year": 2010,
+        "creators": ["Frank Darabont"],
+        "actors": ["Andrew Lincoln", "Norman Reedus", "Melissa McBride"],
+        "genre": "Drama, Horror, Thriller",
+        "synopsis": "Sheriff Deputy Rick Grimes wakes up from a coma to learn the world is in ruins, and must lead a group of survivors to stay alive.",
+        "image": "https://m.media-amazon.com/images/I/81CPr4Aj4AL._AC_UY218_.jpg",
+        "rating": 8.2
+      },
+      {
+        "title": "Westworld",
+        "year": 2016,
+        "creators": ["Lisa Joy", "Jonathan Nolan"],
+        "actors": ["Evan Rachel Wood", "Jeffrey Wright", "Ed Harris"],
+        "genre": "Drama, Mystery, Sci-Fi",
+        "synopsis": "Set at the intersection of the near future and the reimagined past, explore a world in which every human appetite can be indulged without consequence.",
+        "image": "https://m.media-amazon.com/images/I/81V2yYyPA2L._AC_UY218_.jpg",
+        "rating": 8.6
+      },
+      {
+        "title": "The Crown",
+        "year": 2016,
+        "creators": ["Peter Morgan"],
+        "actors": ["Claire Foy", "Olivia Colman", "Imelda Staunton"],
+        "genre": "Biography, Drama, History",
+        "synopsis": "Follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the twentieth century.",
+        "image": "https://m.media-amazon.com/images/I/71ux8QpsrkL._AC_UY218_.jpg",
+        "rating": 8.6
+      },
+      {
+        "title": "Black Mirror",
+        "year": 2011,
+        "creators": ["Charlie Brooker"],
+        "actors": ["Daniel Lapaine", "Hannah John-Kamen", "Michaela Coel"],
+        "genre": "Drama, Sci-Fi, Thriller",
+        "synopsis": "An anthology series exploring a twisted, high-tech multiverse where humanity's greatest innovations and darkest instincts collide.",
+        "image": "https://m.media-amazon.com/images/I/91LcizItUqL._AC_UY218_.jpg",
+        "rating": 8.8
+      },
+      {
+        "title": "Money Heist",
+        "year": 2017,
+        "creators": ["Álex Pina"],
+        "actors": ["Úrsula Corberó", "Álvaro Morte", "Itziar Ituño"],
+        "genre": "Action, Crime, Drama",
+        "synopsis": "An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.",
+        "image": "https://m.media-amazon.com/images/I/617rEp7jnsL._AC_UY218_.jpg",
+        "rating": 8.2
+      },
+      {
+        "title": "The Sopranos",
+        "year": 1999,
+        "creators": ["David Chase"],
+        "actors": ["James Gandolfini", "Lorraine Bracco", "Edie Falco"],
+        "genre": "Crime, Drama",
+        "synopsis": "New Jersey mob boss Tony Soprano deals with personal and professional issues in his home and business life that affect his mental state, leading him to seek professional psychiatric counseling.",
+        "image": "https://m.media-amazon.com/images/I/61kAZgy8xJL._AC_UY218_.jpg",
+        "rating": 9.2
+      },
+      {
+        "title": "Narcos",
+        "year": 2015,
+        "creators": ["Carlo Bernard", "Chris Brancato", "Doug Miro"],
+        "actors": ["Pedro Pascal", "Wagner Moura", "Boyd Holbrook"],
+        "genre": "Biography, Crime, Drama",
+        "synopsis": "A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many other drug lords who plagued the country through the years.",
+        "image": "https://m.media-amazon.com/images/I/51AarO66jIL._AC_UY218_.jpg",
+        "rating": 8.8
+      },
+      {
+        "title": "Peaky Blinders",
+        "year": 2013,
+        "creators": ["Steven Knight"],
+        "actors": ["Cillian Murphy", "Paul Anderson", "Helen McCrory"],
+        "genre": "Crime, Drama",
+        "synopsis": "A gangster family epic set in 1919 Birmingham, England and centered on a gang who sew razor blades in the peaks of their caps, and their fierce boss Tommy Shelby.",
+        "image": "https://m.media-amazon.com/images/I/81GRK4Wh-JL._AC_UY218_.jpg",
+        "rating": 8.8
+      },
+      {
+        "title": "Vikings",
+        "year": 2013,
+        "creators": ["Michael Hirst"],
+        "actors": ["Katheryn Winnick", "Gustaf Skarsgård", "Alexander Ludwig"],
+        "genre": "Action, Adventure, Drama",
+        "synopsis": "Vikings follows the adventures of Ragnar Lothbrok, the greatest hero of his age. The series tells the sagas of Ragnar's band of Viking brothers and his family, as he rises to become King of the Viking tribes.",
+        "image": "https://m.media-amazon.com/images/I/71czas+QKHL._AC_UY218_.jpg",
+        "rating": 8.5
+      },
+      {
+        "title": "The Handmaid's Tale",
+        "year": 2017,
+        "creators": ["Bruce Miller"],
+        "actors": ["Elisabeth Moss", "Yvonne Strahovski", "Joseph Fiennes"],
+        "genre": "Drama, Sci-Fi, Thriller",
+        "synopsis": "Set in a dystopian future, a woman is forced to live as a concubine under a fundamentalist theocratic dictatorship.",
+        "image": "https://m.media-amazon.com/images/I/61twdQW63gL._AC_UY218_.jpg",
+        "rating": 8.4
+      }
     ]
   }
   
