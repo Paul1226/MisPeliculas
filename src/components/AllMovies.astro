@@ -1,0 +1,17 @@
+---
+import CardMovie from "./CardMovie.astro"
+import {movies} from "../../movies.json"
+---
+
+<section>
+    <h2 class="pb-4 text-xl font-bold">Películas</h2>
+
+    <div class="container grid grid-cols-[repeat(auto-fill,minmax(130px,1fr))] gap-4">
+        {
+            movies.map(movie=>{
+                return <CardMovie name={movie.title} image={movie.image} ratin={movie.rating}/>
+            })
+        }
+    </div>
+
+</section>
