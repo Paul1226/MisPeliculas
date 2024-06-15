@@ -31,11 +31,11 @@ const anios = [
 ---
 
 <nav
-    class="w-1/2 max-w-[250px] min-h-min h-[85dvh] bg-bgs absolute top-0 left-[-100%] z-20 flex flex-col gap-1 rounded-r-xl shadow-l-lg overflow-y-auto scroll-smooth nav md:relative md:left-0 md:min-w-[250px] md:max-w-[250px]"
+    class="nav [grid-area:nav] w-1/2 min-h-full max-h-full max-w-[250px] bg-bgs absolute top-0 left-[-100%] z-20 flex flex-col gap-1 rounded-r-xl shadow-l-lg overflow-y-auto scroll-smooth md:relative md:left-0 md:w-full md:min-w-[250px] md:max-h-[100px]"
 >
     <h3 class="text-xs text-sky-100/50 uppercase p-4">Navegación</h3>
 
-    <ul>
+    <ul class="h-min">
         <LiNav opcion="Inicio" link="/">
             <path
                 slot="icono"

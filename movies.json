@@ -8,7 +8,8 @@
         "genre": "Action, Adventure, Fantasy",
         "synopsis": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
         "image": "https://m.media-amazon.com/images/I/61OUGpUfAyL._AC_SY679_.jpg",
-        "rating": 7.8
+        "rating": 7.8,
+        "id": "1p"
       },
       {
         "title": "Avengers: Endgame",
@@ -18,7 +19,8 @@
         "genre": "Action, Adventure, Drama",
         "synopsis": "After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
         "image": "https://m.media-amazon.com/images/I/81ExhpBEbHL._AC_SY679_.jpg",
-        "rating": 8.4
+        "rating": 8.4,
+        "id": "2p"
       },
       {
         "title": "Titanic",
@@ -28,7 +30,8 @@
         "genre": "Drama, Romance",
         "synopsis": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
         "image": "https://m.media-amazon.com/images/I/811lT7khIrL._AC_UY218_.jpg",
-        "rating": 7.9
+        "rating": 7.9,
+        "id": "3p"
       },
       {
         "title": "Star Wars: Episode VII - The Force Awakens",
@@ -38,7 +41,8 @@
         "genre": "Action, Adventure, Fantasy",
         "synopsis": "As a new threat to the galaxy rises, Rey, a desert scavenger, and Finn, an ex-stormtrooper, must join Han Solo and Chewbacca to search for the one hope of restoring peace.",
         "image": "https://m.media-amazon.com/images/I/91FDYb0ehmL._AC_UY218_.jpg",
-        "rating": 7.9
+        "rating": 7.9,
+        "id": "4p"
       },
       {
         "title": "Avengers: Infinity War",
@@ -48,7 +52,8 @@
         "genre": "Action, Adventure, Sci-Fi",
         "synopsis": "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
         "image": "https://m.media-amazon.com/images/I/91HAJrnBx0L._AC_UY218_.jpg",
-        "rating": 8.4
+        "rating": 8.4,
+        "id": "5p"
       },
       {
         "title": "Spider-Man: No Way Home",
@@ -58,7 +63,8 @@
         "genre": "Action, Adventure, Fantasy",
         "synopsis": "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
         "image": "https://m.media-amazon.com/images/I/81Yopa9w4yL._AC_UY218_.jpg",
-        "rating": 8.3
+        "rating": 8.3,
+        "id": "6p"
       },
       {
         "title": "Jurassic World",
@@ -68,7 +74,8 @@
         "genre": "Action, Adventure, Sci-Fi",
         "synopsis": "A new theme park, built on the original site of Jurassic Park, creates a genetically modified hybrid dinosaur, the Indominus Rex, which escapes containment and goes on a killing spree.",
         "image": "https://m.media-amazon.com/images/I/81bEk4cFbHL._AC_UY218_.jpg",
-        "rating": 7.0
+        "rating": 7.0,
+        "id": "7p"
       },
       {
         "title": "The Lion King",
@@ -78,7 +85,8 @@
         "genre": "Animation, Adventure, Drama",
         "synopsis": "After the murder of his father, a young lion prince flees his kingdom only to learn the true meaning of responsibility and bravery.",
         "image": "https://m.media-amazon.com/images/I/81aLWmKrNVL._AC_UY218_.jpg",
-        "rating": 6.9
+        "rating": 6.9,
+        "id": "8p"
       },
       {
         "title": "The Avengers",
@@ -88,7 +96,8 @@
         "genre": "Action, Adventure, Sci-Fi",
         "synopsis": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
         "image": "https://m.media-amazon.com/images/I/81lMrc8bBRL._AC_UY218_.jpg",
-        "rating": 8.0
+        "rating": 8.0,
+        "id": "9p"
       },
       {
         "title": "Furious 7",
@@ -98,7 +107,8 @@
         "genre": "Action, Adventure, Thriller",
         "synopsis": "Deckard Shaw seeks revenge against Dominic Toretto and his family for his comatose brother.",
         "image": "https://m.media-amazon.com/images/I/81ClciXon2L._AC_UY218_.jpg",
-        "rating": 7.1
+        "rating": 7.1,
+        "id": "10p"
       },
       {
         "title": "Frozen II",
@@ -108,7 +118,8 @@
         "genre": "Animation, Adventure, Comedy",
         "synopsis": "Anna, Elsa, Kristoff, Olaf, and Sven leave Arendelle to travel to an ancient, autumn-bound forest of an enchanted land. They set out to find the origin of Elsa's powers in order to save their kingdom.",
         "image": "https://m.media-amazon.com/images/I/91ttPlXef0L._AC_UY218_.jpg",
-        "rating": 6.8
+        "rating": 6.8,
+        "id": "11p"
       },
       {
         "title": "Avengers: Age of Ultron",
@@ -118,7 +129,8 @@
         "genre": "Action, Adventure, Sci-Fi",
         "synopsis": "When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's mightiest heroes to stop the villainous Ultron from enacting his terrible plan.",
         "image": "https://m.media-amazon.com/images/I/91-IY2F3ArL._AC_UY218_.jpg",
-        "rating": 7.3
+        "rating": 7.3,
+        "id": "12p"
       },
       {
         "title": "Black Panther",
@@ -128,7 +140,8 @@
         "genre": "Action, Adventure, Sci-Fi",
         "synopsis": "T'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future and must confront a challenger from his country's past.",
         "image": "https://m.media-amazon.com/images/I/81t5mOc1PeL._AC_UY218_.jpg",
-        "rating": 7.3
+        "rating": 7.3,
+        "id": "13p"
       },
       {
         "title": "Harry Potter and the Deathly Hallows: Part 2",
@@ -138,7 +151,8 @@
         "genre": "Adventure, Drama, Fantasy",
         "synopsis": "Harry, Ron, and Hermione search for Voldemort's remaining Horcruxes in their effort to destroy the Dark Lord as the final battle rages on at Hogwarts.",
         "image": "https://m.media-amazon.com/images/I/91yy1iDB8OL._AC_UY218_.jpg",
-        "rating": 8.1
+        "rating": 8.1,
+        "id": "14p"
       },
       {
         "title": "Star Wars: Episode VIII - The Last Jedi",
@@ -148,7 +162,8 @@
         "genre": "Action, Adventure, Fantasy",
         "synopsis": "Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares for battle with the First Order.",
         "image": "https://m.media-amazon.com/images/I/81xtAp7e77L._AC_UY218_.jpg",
-        "rating": 7.0
+        "rating": 7.0,
+        "id": "15p"
       },
       {
         "title": "Jurassic World: Fallen Kingdom",
@@ -158,7 +173,8 @@
         "genre": "Action, Adventure, Sci-Fi",
         "synopsis": "When the island's dormant volcano begins roaring to life, Owen and Claire mount a campaign to rescue the remaining dinosaurs from this extinction-level event.",
         "image": "https://m.media-amazon.com/images/I/81tSb2CYRoL._AC_UY218_.jpg",
-        "rating": 6.2
+        "rating": 6.2,
+        "id": "16p"
       },
       {
         "title": "Frozen",
@@ -168,7 +184,8 @@
         "genre": "Animation, Adventure, Comedy",
         "synopsis": "When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.",
         "image": "https://m.media-amazon.com/images/I/91FhnyvtjCL._AC_UY218_.jpg",
-        "rating": 7.4
+        "rating": 7.4,
+        "id": "17p"
       },
       {
         "title": "Beauty and the Beast",
@@ -178,7 +195,8 @@
         "genre": "Family, Fantasy, Musical",
         "synopsis": "A selfish prince is cursed to become a monster for the rest of his life, unless he learns to fall in love with a beautiful young woman he keeps prisoner.",
         "image": "https://m.media-amazon.com/images/I/91fU8TYkR4L._AC_UY218_.jpg",
-        "rating": 7.1
+        "rating": 7.1,
+        "id": "18p"
       },
       {
         "title": "Venom",
@@ -188,7 +206,8 @@
         "genre": "Action, Horror, Sci-Fi",
         "synopsis": "After finding a host body in investigative reporter Eddie Brock, the alien symbiote starts to bring people and their allies closer to the_elimination ofTARGET.",
         "image": "https://m.media-amazon.com/images/I/91oaYOLSe3S._AC_UY218_.jpg",
-        "rating": 6.8
+        "rating": 6.8,
+        "id": "19p"
       },
       {
         "title": "Incredibles 2",
@@ -198,7 +217,8 @@
         "genre": "Animation, Action, Adventure",
         "synopsis": "The Incredibles family takes on a new mission, which involves a change in family roles: Bob Parr (Mr. Incredible) must manage the house while his wife Helen (Elastigirl) goes out to save the world.",
         "image": "https://m.media-amazon.com/images/I/91+VySrmrfL._AC_UY218_.jpg",
-        "rating": 7.6
+        "rating": 7.6,
+        "id": "20p"
       },
       {
         "title": "The Fate of the Furious",
@@ -208,7 +228,8 @@
         "genre": "Action, Adventure, Crime",
         "synopsis": "When a mysterious woman seduces Dom into the world of crime and betrayal of those closest to him, the crew face trials that will test them as never before.",
         "image": "https://m.media-amazon.com/images/I/818zLOmMUkL._AC_UY218_.jpg",
-        "rating": 6.7
+        "rating": 6.7,
+        "id": "21p"
       },
       {
         "title": "Iron Man 3",
@@ -218,7 +239,8 @@
         "genre": "Action, Adventure, Sci-Fi",
         "synopsis": "When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.",
         "image": "https://m.media-amazon.com/images/I/91JyaYilblL._AC_UL320_.jpg",
-        "rating": 7.1
+        "rating": 7.1,
+        "id": "22p"
       },
       {
         "title": "Minions",
@@ -228,7 +250,8 @@
         "genre": "Animation, Adventure, Comedy",
         "synopsis": "Minions Stuart, Kevin, and Bob are recruited by Scarlet Overkill, a supervillain who, alongside her inventor husband Herb, hatches a plot to take over the world.",
         "image": "https://m.media-amazon.com/images/I/71n1rpeQrKL._AC_UY218_.jpg",
-        "rating": 6.4
+        "rating": 6.4,
+        "id": "23p"
       },
       {
         "title": "Captain America: Civil War",
@@ -238,7 +261,8 @@
         "genre": "Action, Adventure, Sci-Fi",
         "synopsis": "Political interference in the Avengers' activities causes a rift between former allies Captain America and Iron Man.",
         "image": "https://m.media-amazon.com/images/I/91QeHriyBcL._AC_UY218_.jpg",
-        "rating": 7.8
+        "rating": 7.8,
+        "id": "24p"
       },
       {
         "title": "Aquaman",
@@ -248,7 +272,8 @@
         "genre": "Action, Adventure, Fantasy",
         "synopsis": "Arthur Curry, the human-born heir to the underwater kingdom of Atlantis, goes on a quest to prevent a war between the worlds of ocean and land.",
         "image": "https://m.media-amazon.com/images/I/916WSgvze3L._AC_UY218_.jpg",
-        "rating": 6.9
+        "rating": 6.9,
+        "id": "25p"
       },
       {
         "title": "The Lord of the Rings: The Return of the King",
@@ -258,7 +283,8 @@
         "genre": "Action, Adventure, Drama",
         "synopsis": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
         "image": "https://m.media-amazon.com/images/I/91LAfx+AZhL._AC_UY218_.jpg",
-        "rating": 8.9
+        "rating": 8.9,
+        "id": "26p"
       },
       {
         "title": "Skyfall",
@@ -268,7 +294,8 @@
         "genre": "Action, Adventure, Thriller",
         "synopsis": "James Bond's loyalty to M is tested when her past comes back to haunt her. When MI6 comes under attack, 007 must track down and destroy the threat, no matter how personal the cost.",
         "image": "https://m.media-amazon.com/images/I/91P7eK+4KmL._AC_UY218_.jpg",
-        "rating": 7.7
+        "rating": 7.7,
+        "id": "27p"
       },
       {
         "title": "Transformers: Dark of the Moon",
@@ -278,7 +305,8 @@
         "genre": "Action, Adventure, Sci-Fi",
         "synopsis": "The Autobots learn of a Cybertronian spacecraft hidden on the moon, and race against the Decepticons to reach it and to learn its secrets.",
         "image": "https://m.media-amazon.com/images/I/91bxF4jgMTL._AC_UY218_.jpg",
-        "rating": 6.2
+        "rating": 6.2,
+        "id": "28p"
       },
       {
         "title": "Captain Marvel",
@@ -288,7 +316,8 @@
         "genre": "Action, Adventure, Sci-Fi",
         "synopsis": "Carol Danvers becomes one of the universe's most powerful heroes when Earth is caught in the middle of a galactic war between two alien races.",
         "image": "https://m.media-amazon.com/images/I/81e71LEqiVL._AC_UY218_.jpg",
-        "rating": 6.8
+        "rating": 6.8,
+        "id": "29p"
       },
       {
         "title": "Spider-Man: Far From Home",
@@ -298,7 +327,8 @@
         "genre": "Action, Adventure, Sci-Fi",
         "synopsis": "Following the events of Avengers: Endgame, Spider-Man must step up to take on new threats in a world that has changed forever.",
         "image": "https://m.media-amazon.com/images/I/91A+eXyGmvL._AC_UY218_.jpg",
-        "rating": 7.4
+        "rating": 7.4,
+        "id": "30p"
       },
       {
         "title": "Jurassic Park",
@@ -308,7 +338,8 @@
         "genre": "Adventure, Sci-Fi, Thriller",
         "synopsis": "During a preview tour, a theme park suffers a major power breakdown that allows its cloned dinosaur exhibits to run amok.",
         "image": "https://m.media-amazon.com/images/I/7146s0GzEUL._AC_UY218_.jpg",
-        "rating": 8.1
+        "rating": 8.1,
+        "id": "31p"
       },
       {
         "title": "Venom: Let There Be Carnage",
@@ -318,10 +349,22 @@
         "genre": "Action, Horror, Sci-Fi",
         "synopsis": "After finding a host body in investigative reporter Eddie Brock, the alien symbiote starts to bring people and their allies closer to the_elimination ofTARGET.",
         "image": "https://m.media-amazon.com/images/I/91me1m5qz4L._AC_UY218_.jpg",
-        "rating": 6.8
+        "rating": 6.8,
+        "id": "32p"
       }
     ],
     "series": [
+      {
+        "title": "Twenty-Five Twenty-One",
+        "year": 2022,
+        "creators": ["Kwon Do-eun"],
+        "actors": ["Kim Tae-ri", "Nam Joo-hyuk", "Bona"],
+        "genre": "Drama, Romance",
+        "synopsis": "In a time when dreams seem out of reach, a teenage fencer pursues big ambitions and meets a hardworking young man who seeks to rebuild his life.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIDF5fCHxkOvFXskuD8LJiJ5Qx65cL_t4czlakntmAOmz2wLelvHmZX64lfsuJdYcdlSA&usqp=CAU",
+        "rating": 8.7,
+        "id" : "10s"
+      },
       {
         "title": "Game of Thrones",
         "year": 2011,
@@ -330,7 +373,8 @@
         "genre": "Action, Adventure, Drama",
         "synopsis": "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
         "image": "https://m.media-amazon.com/images/I/91wn+Av0LGL._AC_UY218_.jpg",
-        "rating": 9.3
+        "rating": 9.3,
+        "id": "1s"
       },
       {
         "title": "Breaking Bad",
@@ -340,7 +384,8 @@
         "genre": "Crime, Drama, Thriller",
         "synopsis": "A high school chemistry teacher turned methamphetamine producer partners with a former student to secure his family's future.",
         "image": "https://m.media-amazon.com/images/I/81Te1+KzW-L._AC_UY218_.jpg",
-        "rating": 9.5
+        "rating": 9.5,
+        "id": "2s"
       },
       {
         "title": "Stranger Things",
@@ -350,7 +395,8 @@
         "genre": "Drama, Fantasy, Horror",
         "synopsis": "When a young boy disappears, his mother, a police chief, and his friends must confront terrifying supernatural forces in order to get him back.",
         "image": "https://m.media-amazon.com/images/I/81Ld12DNDNL._AC_UY218_.jpg",
-        "rating": 8.7
+        "rating": 8.7,
+        "id": "3s"
       },
       {
         "title": "The Witcher",
@@ -360,7 +406,8 @@
         "genre": "Action, Adventure, Drama",
         "synopsis": "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.",
         "image": "https://m.media-amazon.com/images/I/816PBiN8q5L._AC_UY218_.jpg",
-        "rating": 8.2
+        "rating": 8.2,
+        "id": "4s"
       },
       {
         "title": "The Mandalorian",
@@ -370,7 +417,8 @@
         "genre": "Action, Adventure, Fantasy",
         "synopsis": "The travels of a lone bounty hunter in the outer reaches of the galaxy, far from the authority of the New Republic.",
         "image": "https://m.media-amazon.com/images/I/81tfKiNfztL._AC_UY218_.jpg",
-        "rating": 8.8
+        "rating": 8.8,
+        "id": "5s"
       },
       {
         "title": "Friends",
@@ -380,7 +428,8 @@
         "genre": "Comedy, Romance",
         "synopsis": "Follows the personal and professional lives of six twenty to thirty-something-year-old friends living in Manhattan.",
         "image": "https://m.media-amazon.com/images/I/91eUTJInKkL._AC_UY218_.jpg",
-        "rating": 8.9
+        "rating": 8.9,
+        "id": "6s"
       },
       {
         "title": "The Office",
@@ -390,7 +439,8 @@
         "genre": "Comedy",
         "synopsis": "A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, and tedium.",
         "image": "https://m.media-amazon.com/images/I/91d053F2aKL._AC_UY218_.jpg",
-        "rating": 8.9
+        "rating": 8.9,
+        "id": "7s"
       },
       {
         "title": "Sherlock",
@@ -400,7 +450,8 @@
         "genre": "Crime, Drama, Mystery",
         "synopsis": "A modern update finds the famous sleuth and his doctor partner solving crime in 21st century London.",
         "image": "https://m.media-amazon.com/images/I/91Mdaxz+a0L._AC_UY218_.jpg",
-        "rating": 9.1
+        "rating": 9.1,
+        "id": "8s"
       },
       {
         "title": "The Walking Dead",
@@ -410,7 +461,8 @@
         "genre": "Drama, Horror, Thriller",
         "synopsis": "Sheriff Deputy Rick Grimes wakes up from a coma to learn the world is in ruins, and must lead a group of survivors to stay alive.",
         "image": "https://m.media-amazon.com/images/I/81CPr4Aj4AL._AC_UY218_.jpg",
-        "rating": 8.2
+        "rating": 8.2,
+        "id": "9s"
       },
       {
         "title": "Westworld",
@@ -420,7 +472,8 @@
         "genre": "Drama, Mystery, Sci-Fi",
         "synopsis": "Set at the intersection of the near future and the reimagined past, explore a world in which every human appetite can be indulged without consequence.",
         "image": "https://m.media-amazon.com/images/I/81V2yYyPA2L._AC_UY218_.jpg",
-        "rating": 8.6
+        "rating": 8.6,
+        "id": "10s"
       },
       {
         "title": "The Crown",
@@ -430,7 +483,8 @@
         "genre": "Biography, Drama, History",
         "synopsis": "Follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the twentieth century.",
         "image": "https://m.media-amazon.com/images/I/71ux8QpsrkL._AC_UY218_.jpg",
-        "rating": 8.6
+        "rating": 8.6,
+        "id": "11s"
       },
       {
         "title": "Black Mirror",
@@ -440,7 +494,8 @@
         "genre": "Drama, Sci-Fi, Thriller",
         "synopsis": "An anthology series exploring a twisted, high-tech multiverse where humanity's greatest innovations and darkest instincts collide.",
         "image": "https://m.media-amazon.com/images/I/91LcizItUqL._AC_UY218_.jpg",
-        "rating": 8.8
+        "rating": 8.8,
+        "id": "12s"
       },
       {
         "title": "Money Heist",
@@ -450,7 +505,8 @@
         "genre": "Action, Crime, Drama",
         "synopsis": "An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.",
         "image": "https://m.media-amazon.com/images/I/617rEp7jnsL._AC_UY218_.jpg",
-        "rating": 8.2
+        "rating": 8.2,
+        "id": "13s"
       },
       {
         "title": "The Sopranos",
@@ -460,7 +516,8 @@
         "genre": "Crime, Drama",
         "synopsis": "New Jersey mob boss Tony Soprano deals with personal and professional issues in his home and business life that affect his mental state, leading him to seek professional psychiatric counseling.",
         "image": "https://m.media-amazon.com/images/I/61kAZgy8xJL._AC_UY218_.jpg",
-        "rating": 9.2
+        "rating": 9.2,
+        "id": "14s"
       },
       {
         "title": "Narcos",
@@ -470,7 +527,8 @@
         "genre": "Biography, Crime, Drama",
         "synopsis": "A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many other drug lords who plagued the country through the years.",
         "image": "https://m.media-amazon.com/images/I/51AarO66jIL._AC_UY218_.jpg",
-        "rating": 8.8
+        "rating": 8.8,
+        "id": "15s"
       },
       {
         "title": "Peaky Blinders",
@@ -480,7 +538,8 @@
         "genre": "Crime, Drama",
         "synopsis": "A gangster family epic set in 1919 Birmingham, England and centered on a gang who sew razor blades in the peaks of their caps, and their fierce boss Tommy Shelby.",
         "image": "https://m.media-amazon.com/images/I/81GRK4Wh-JL._AC_UY218_.jpg",
-        "rating": 8.8
+        "rating": 8.8,
+        "id": "16s"
       },
       {
         "title": "Vikings",
@@ -490,7 +549,8 @@
         "genre": "Action, Adventure, Drama",
         "synopsis": "Vikings follows the adventures of Ragnar Lothbrok, the greatest hero of his age. The series tells the sagas of Ragnar's band of Viking brothers and his family, as he rises to become King of the Viking tribes.",
         "image": "https://m.media-amazon.com/images/I/71czas+QKHL._AC_UY218_.jpg",
-        "rating": 8.5
+        "rating": 8.5,
+        "id": "17s"
       },
       {
         "title": "The Handmaid's Tale",
@@ -500,7 +560,8 @@
         "genre": "Drama, Sci-Fi, Thriller",
         "synopsis": "Set in a dystopian future, a woman is forced to live as a concubine under a fundamentalist theocratic dictatorship.",
         "image": "https://m.media-amazon.com/images/I/61twdQW63gL._AC_UY218_.jpg",
-        "rating": 8.4
+        "rating": 8.4,
+        "id": "18s"
       }
     ]
   }

@@ -1,28 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../sections/Header.astro";
-import Nav from "../sections/Nav.astro";
-import Main from "../sections/Main.astro";
+import AllMovies from "../components/AllMovies.astro";
+import AllSeries from "../components/AllSeries.astro";
 ---
 
 <Layout title="MisPeliculas | Proyecto">
-	<section class="section w-full h-[94dvh] rounded-xl overflow-hidden">
-		<Header />
-		<main class="w-full relative main_content">
-			<Nav />
-			<Main />
-		</main>
-	</section>
+	<section class="section overflow-y-auto">
+        <AllMovies />
+        <AllSeries />
+    </section>
 </Layout>
 
-<style>
-	.section {
-		display: grid;
-		grid-template-rows: auto 1fr;
 
-		.main_content {
-			display: grid;
-			grid-template-columns: auto 1fr;
-		}
-	}
+<style>
+	.section{
+        scrollbar-width: thin;
+        scrollbar-color: #38bdf880 #00000000;
+        scroll-behavior: smooth;
+        transition: left 500ms cubic-bezier(0, 0.11, 0.35, 2);
+    }
 </style>
