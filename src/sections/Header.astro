@@ -70,14 +70,12 @@ import Svg from "../components/Svg.astro";
 </style>
 
 <script>
-  const $linkMenu = document.querySelector('.menu')
-  const $nav = document.querySelector('.nav')
+  const $input = document.querySelector('.input') as HTMLInputElement
+  const $button = document.querySelector('.icon')
 
-  $linkMenu?.addEventListener('click', (e)=>{
-    e.preventDefault()
-
-    $linkMenu?.classList.toggle('active')
-    $nav?.classList.toggle('active')
-
+  $button?.addEventListener('click',(e)=>{
+    if($input.value !== ''){
+      console.log($input.value)
+    }
   })
 </script>
