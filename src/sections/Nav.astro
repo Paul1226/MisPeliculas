@@ -4,30 +4,31 @@ import LiNav from "../components/LiNav.astro";
 import SubLi from "../components/SubLi.astro";
 
 const generos = [
-    {link:'#', tipo:'Acción'},
-    {link:'#', tipo:'Aventura'},
-    {link:'#', tipo:'Comedia'},
-    {link:'#', tipo:'Crimen'},
-    {link:'#', tipo:'Drama'},
-    {link:'#', tipo:'Fantasia'},
-    {link:'#', tipo:'Historia'},
-    {link:'#', tipo:'Misterio'},
-    {link:'#', tipo:'Romance'},
-    {link:'#', tipo:'Suspenso'},
-    {link:'#', tipo:'Terror'},
-]
+    { link: "#", tipo: "Acción" },
+    { link: "#", tipo: "Aventura" },
+    { link: "#", tipo: "Comedia" },
+    { link: "#", tipo: "Crimen" },
+    { link: "#", tipo: "Drama" },
+    { link: "#", tipo: "Fantasia" },
+    { link: "#", tipo: "Historia" },
+    { link: "#", tipo: "Misterio" },
+    { link: "#", tipo: "Romance" },
+    { link: "#", tipo: "Suspenso" },
+    { link: "#", tipo: "Terror" },
+];
 
 const anios = [
-    {link:'#', tipo:'2024'},
-    {link:'#', tipo:'2023'},
-    {link:'#', tipo:'2022'},
-    {link:'#', tipo:'2021'},
-    {link:'#', tipo:'2020'},
-    {link:'#', tipo:'2019'},
-    {link:'#', tipo:'2018'},
-    {link:'#', tipo:'2017'},
-    {link:'#', tipo:'2016'},
-    {link:'#', tipo:'2015'},]
+    { link: "#", tipo: "2024" },
+    { link: "#", tipo: "2023" },
+    { link: "#", tipo: "2022" },
+    { link: "#", tipo: "2021" },
+    { link: "#", tipo: "2020" },
+    { link: "#", tipo: "2019" },
+    { link: "#", tipo: "2018" },
+    { link: "#", tipo: "2017" },
+    { link: "#", tipo: "2016" },
+    { link: "#", tipo: "2015" },
+];
 ---
 
 <nav
@@ -35,15 +36,24 @@ const anios = [
 >
     <h3 class="text-xs text-sky-100/50 uppercase p-4">Navegación</h3>
 
-    <ul class="h-min">
-        <LiNav opcion="Inicio" link="/">
-            <path
-                slot="icono"
-                d="M454.333 122.112V129.612L460.333 134.112C483.365 151.386 497 178.457 497 207.445V405.333C497 455.865 455.865 497 405.333 497H362.667C359.163 497 356.333 494.168 356.333 490.667V298.667C356.333 278.638 340.07 262.333 320 262.333H192C171.93 262.333 155.667 278.638 155.667 298.667V490.667C155.667 494.168 152.837 497 149.333 497H106.667C56.1349 497 15 455.865 15 405.333V207.445C15 176.913 30.1003 148.525 55.3905 131.451L204.719 30.6756C204.72 30.6749 204.721 30.6743 204.722 30.6736C235.896 9.64743 276.104 9.64754 307.279 30.6739C307.28 30.6745 307.281 30.675 307.281 30.6756L418.276 105.575L441.667 121.359V93.1414V42.6667C441.667 39.1652 444.497 36.3334 448 36.3334C451.503 36.3334 454.333 39.1652 454.333 42.6667V122.112Z"
-            ></path>
-        </LiNav>
+    <ul class="h-min nav_ul">
+        <li class="li_inicio">
+            <a
+                class="flex items-center gap-4 text-sky-200 text-sm p-2 px-4 hover:bg-sky-50/10 transition-colors duration-300 ease-in-out links"
+                href="/"
+            >
+                <Svg class="w-4 fill-sky-200">
+                    <path
+                        d="M454.333 122.112V129.612L460.333 134.112C483.365 151.386 497 178.457 497 207.445V405.333C497 455.865 455.865 497 405.333 497H362.667C359.163 497 356.333 494.168 356.333 490.667V298.667C356.333 278.638 340.07 262.333 320 262.333H192C171.93 262.333 155.667 278.638 155.667 298.667V490.667C155.667 494.168 152.837 497 149.333 497H106.667C56.1349 497 15 455.865 15 405.333V207.445C15 176.913 30.1003 148.525 55.3905 131.451L204.719 30.6756C204.72 30.6749 204.721 30.6743 204.722 30.6736C235.896 9.64743 276.104 9.64754 307.279 30.6739C307.28 30.6745 307.281 30.675 307.281 30.6756L418.276 105.575L441.667 121.359V93.1414V42.6667C441.667 39.1652 444.497 36.3334 448 36.3334C451.503 36.3334 454.333 39.1652 454.333 42.6667V122.112Z"
+                    ></path>
+                </Svg>
+                <span class="w-full flex justify-between items-center">
+                    Inicio
+                </span>
+            </a>
+        </li>
 
-        <LiNav opcion="Películas" link="#peliculas">
+        <LiNav opcion="Películas" link="#">
             <path
                 slot="icono"
                 d="M328.714 371.288C348.549 359.4 350.978 332.709 336.003 317.195V315.281L328.08 311.042L229.503 258.285C206.294 244.715 177 261.437 177 288.427V394.261C177 421.251 206.294 437.973 229.503 424.403L328.08 371.647L328.402 371.475L328.714 371.288ZM269.045 134.333L367.045 36.3334H405.333C408.012 36.3334 410.663 36.4488 413.28 36.675L315.621 134.333H269.045ZM497 128V134.333H418.379L479.076 73.6358C490.347 88.865 497 107.673 497 128ZM264.288 36.3334L166.288 134.333H131.25L230.622 36.3334H264.288ZM15 134.333V128C15 77.4683 56.1349 36.3334 106.667 36.3334H127.14L27.7678 134.333H15ZM497 207V384C497 434.532 455.865 475.667 405.333 475.667H106.667C56.1349 475.667 15 434.532 15 384V207H497Z"
@@ -60,7 +70,7 @@ const anios = [
             </ul>
         </LiNav>
 
-        <LiNav opcion="Series" link="#series">
+        <LiNav opcion="Series" link="#">
             <path
                 slot="icono"
                 d="M177 85.3333C177 124.174 145.508 155.667 106.667 155.667C67.8256 155.667 36.3333 124.174 36.3333 85.3333C36.3333 46.4923 67.8256 15 106.667 15C145.508 15 177 46.4923 177 85.3333ZM228.333 85.3333C228.333 46.4923 259.826 15 298.667 15C337.508 15 369 46.4923 369 85.3333C369 124.174 337.508 155.667 298.667 155.667C259.826 155.667 228.333 124.174 228.333 85.3333ZM390.333 298.667V426.667C390.333 465.508 358.841 497 320 497H85.3333C46.4923 497 15 465.508 15 426.667V298.667C15 259.826 46.4923 228.333 85.3333 228.333H320C358.841 228.333 390.333 259.826 390.333 298.667ZM463 429.008V276.101L474.92 264.181C483.095 256.016 497 261.824 497 273.301V431.787C497 443.321 483.075 449.084 474.927 440.935L463 429.008Z"
@@ -77,7 +87,7 @@ const anios = [
             </ul>
         </LiNav>
 
-        <LiNav opcion="Géneros" link="#generos">
+        <LiNav opcion="Géneros" link="#">
             <path
                 slot="icono"
                 d="M480 134.333H170.667C166.158 134.333 161.834 132.542 158.646 129.354C155.458 126.166 153.667 121.842 153.667 117.333C153.667 112.825 155.458 108.501 158.646 105.312C161.834 102.124 166.158 100.333 170.667 100.333H480C484.509 100.333 488.833 102.124 492.021 105.312C495.209 108.501 497 112.825 497 117.333C497 121.842 495.209 126.166 492.021 129.354C488.833 132.542 484.509 134.333 480 134.333Z"
@@ -109,14 +119,16 @@ const anios = [
                 id="generos"
             >
                 {
-                    generos.map(genero=>{
-                        return <SubLi subLink={genero.link} name={genero.tipo} />
+                    generos.map((genero) => {
+                        return (
+                            <SubLi subLink={genero.link} name={genero.tipo} />
+                        );
                     })
                 }
             </ul>
         </LiNav>
 
-        <LiNav opcion="Año" link="#anio">
+        <LiNav opcion="Año" link="#">
             <path
                 slot="icono"
                 d="M320 333.333C320 309.287 310.448 286.226 293.444 269.222C276.441 252.219 253.38 242.667 229.333 242.667C205.287 242.667 182.226 252.219 165.222 269.222C148.219 286.226 138.667 309.287 138.667 333.333C138.667 341.82 142.038 349.96 148.039 355.961C154.04 361.962 162.18 365.333 170.667 365.333C179.154 365.333 187.293 361.962 193.294 355.961C199.295 349.96 202.667 341.82 202.667 333.333C202.667 326.261 205.476 319.478 210.477 314.477C215.478 309.476 222.261 306.667 229.333 306.667C236.406 306.667 243.189 309.476 248.19 314.477C253.191 319.478 256 326.261 256 333.333C256 346.667 230.571 365.739 210.133 381.056C176.64 406.187 138.667 434.667 138.667 480C138.667 488.487 142.038 496.626 148.039 502.627C154.04 508.629 162.18 512 170.667 512H288C296.487 512 304.626 508.629 310.628 502.627C316.629 496.626 320 488.487 320 480C320 471.513 316.629 463.374 310.628 457.373C304.626 451.371 296.487 448 288 448H228.267C234.88 442.581 242.027 437.333 248.64 432.277C282.027 407.147 320 378.667 320 333.333Z"
@@ -136,12 +148,45 @@ const anios = [
                 id="generos"
             >
                 {
-                    anios.map(anio=>{
-                        return <SubLi subLink={anio.link} name={anio.tipo} />
+                    anios.map((anio) => {
+                        return <SubLi subLink={anio.link} name={anio.tipo} />;
                     })
                 }
             </ul>
         </LiNav>
+
+        <script is:inline>
+            const $lisLinks = document.querySelectorAll(".links");
+				const $Sublista = document.querySelectorAll(".sublista");
+
+				$lisLinks.forEach((link) => {
+					link.addEventListener("click", (e) => {
+						e.preventDefault();
+						const $link = e.target
+						const $listaSelecccionada =
+							$link.parentElement?.querySelector(
+								".sublista",
+							)
+
+						if (
+							link.classList.contains("active") &&
+							$listaSelecccionada.classList.contains("active")
+						) {
+							link.classList.remove("active");
+							$listaSelecccionada.classList.remove("active");
+							return;
+						}
+						$lisLinks.forEach((link) =>
+							link.classList.remove("active"),
+						);
+						$Sublista.forEach((lista) =>
+							lista.classList.remove("active"),
+						);
+						link.classList.add("active");
+						$listaSelecccionada.classList.add("active");
+					});
+				});
+        </script>
     </ul>
 </nav>
 
@@ -152,21 +197,5 @@ const anios = [
         scroll-behavior: smooth;
         /* transition: left 500ms cubic-bezier(0, 0.11, 0.35, 2); */
         transition: left 500ms cubic-bezier(0, 0.11, 0.4, 1.2);
-
-        &.active{
-            left: 0;
-        }
-
-        .sublista {
-            display: none;
-
-            &.active {
-                display: flex;
-            }
-        }
     }
 </style>
-
-<script>
-    
-</script>
