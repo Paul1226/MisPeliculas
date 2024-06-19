@@ -8,8 +8,8 @@ import {movies} from "../../movies.json"
 
     <div class="container grid grid-cols-[repeat(auto-fill,minmax(130px,1fr))] gap-5 my-5">
         {
-            movies.map(movie=>{
-                return <CardMovie name={movie.title} image={movie.image} ratin={movie.rating} id={movie.id}/>
+            movies.map(({title, image, rating, id})=>{
+                return <CardMovie name={title} image={image} rating={rating} id={id}/>
             })
         }
     </div>
