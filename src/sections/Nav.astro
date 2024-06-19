@@ -168,30 +168,5 @@ const anios = [
 </style>
 
 <script>
-    const $subListas = document.querySelectorAll(".sublista");
-    const $linksPrincipales = document.querySelectorAll(".links");
-    const $arrow = document.querySelectorAll(".arrow");
-
-    const primerArrow = $arrow[0] as HTMLSpanElement;
-    primerArrow.style.display = 'none'
-
-    $linksPrincipales.forEach((elemento) => {
-        const arrow = elemento.children[1].children[0];
-
-        elemento.addEventListener("click", (e) => {
-            if(elemento.getAttribute('href') !== '/'){
-                // console.log(elemento)
-                e.preventDefault();
-            }
-            // $arrow.forEach((elemento) => elemento.classList.remove("active"));
-            arrow.classList.toggle("active");
-
-            // $subListas.forEach((lista) => {
-            //     lista.classList.remove("active");
-            // });
-
-            elemento.parentElement?.children[1].classList.toggle("active");
-
-        });
-    });
+    
 </script>
