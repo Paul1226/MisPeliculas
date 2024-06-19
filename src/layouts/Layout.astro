@@ -8,12 +8,10 @@ const { title } = Astro.props;
 
 import Header from "../sections/Header.astro";
 import Nav from "../sections/Nav.astro";
-import Main from "../sections/Main.astro";
 
 // font
 // Supports weights 200-800
 import "@fontsource-variable/manrope";
-
 ---
 
 <!doctype html>
@@ -28,7 +26,7 @@ import "@fontsource-variable/manrope";
 			href="https://cdn-uicons.flaticon.com/2.4.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
 		/>
 		<meta name="generator" content={Astro.generator} />
-		<ViewTransitions fallback="none"/>
+		<ViewTransitions fallback="none" />
 		<title>{title}</title>
 	</head>
 	<body class="bg-sky-950 text-sky-100 h-screen">
@@ -37,7 +35,7 @@ import "@fontsource-variable/manrope";
 		>
 			<Header />
 			<main
-				class="relative grid [grid-template-areas:'content']
+				class="relative grid [grid-template-areas:'content']k
 			[grid-area:main] md:[grid-template-areas:'nav_content'] md:[grid-template-columns:auto_1fr]"
 			>
 				<Nav />
@@ -54,25 +52,27 @@ import "@fontsource-variable/manrope";
 								encuentras aquí y en mayor calidad</span
 							>
 						</header>
-						<main class=" bg-red-5 h-full max-h-[450px] flex justify-center md:justify-start">
+						<main
+							class="bg-red-5 h-full max-h-[450px] flex justify-center md:justify-start"
+						>
 							<slot />
 						</main>
 					</div>
 				</main>
 			</main>
 		</div>
-	</body>
-	<style is:global>
-		* {
-			margin: 0;
-			padding: 0;
-			border: 0;
-			box-sizing: border-box;
-		}
+		<style is:global>
+			* {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				box-sizing: border-box;
+			}
 
-		body {
-			font-family: "Manrope Variable", sans-serif;
-			padding: 1rem;
-		}
-	</style>
+			body {
+				font-family: "Manrope Variable", sans-serif;
+				padding: 1rem;
+			}
+		</style>
+	</body>
 </html>
