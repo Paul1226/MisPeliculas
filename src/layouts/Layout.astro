@@ -16,63 +16,65 @@ import "@fontsource-variable/manrope";
 
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link
-			rel="stylesheet"
-			href="https://cdn-uicons.flaticon.com/2.4.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
-		/>
-		<meta name="generator" content={Astro.generator} />
-		<ViewTransitions fallback="none" />
-		<title>{title}</title>
-	</head>
-	<body class="bg-sky-950 text-sky-100 h-screen">
-		<div
-			class="w-full rounded-xl overflow-hidden grid [grid-template-areas:'header''main'] [grid-template-rows:auto_1fr] h-full"
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Astro description" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link
+		rel="stylesheet"
+		href="https://cdn-uicons.flaticon.com/2.4.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
+	/>
+	<meta name="generator" content={Astro.generator} />
+	<ViewTransitions fallback="none" />
+	<title>{title}</title>
+</head>
+<body class="bg-sky-950 text-sky-100">
+	<div
+		class="w-full rounded-xl grid [grid-template-areas:'header''main'] [grid-template-rows:auto_1fr] h-full"
+	>
+		<Header />
+		<main
+			class="relative grid [grid-template-areas:'content']k
+		[grid-area:main] md:[grid-template-areas:'nav_content'] md:[grid-template-columns:auto_1fr]"
 		>
-			<Header />
-			<main
-				class="relative grid [grid-template-areas:'content']k
-			[grid-area:main] md:[grid-template-areas:'nav_content'] md:[grid-template-columns:auto_1fr]"
-			>
-				<Nav />
-				<main class="p-4 [grid-area:content] flex flex-col min-h-full">
-					<div class="flex flex-col gap-4">
-						<header class="py-2 bg-red-5">
-							<h1 class="text-2xl font-bold text-center pb-2">
-								MIS PELICULAS - VER PELICULAS Y SERIES ONLINE EN
-								HD
-							</h1>
-							<span
-								class="text-xs text-sky-50/50 text-center block"
-								>Todas las mejores películas y series las
-								encuentras aquí y en mayor calidad</span
-							>
-						</header>
-						<main
-							class="bg-red-5 h-full max-h-[450px] flex justify-center md:justify-start"
+			<Nav />
+			<main class="p-4 [grid-area:content] flex flex-col">
+				<div class="flex flex-col gap-4">
+					<header class="py-2 bg-red-5">
+						<h1 class="text-2xl font-bold text-center pb-2">
+							MIS PELICULAS - VER PELICULAS Y SERIES ONLINE EN
+							HD
+						</h1>
+						<span
+							class="text-xs text-sky-50/50 text-center block"
+							>Todas las mejores películas y series las
+							encuentras aquí y en mayor calidad</span
 						>
-							<slot />
-						</main>
-					</div>
-				</main>
+					</header>
+					<main class="">
+						<slot />
+					</main>
+				</div>
 			</main>
-		</div>
-		<style is:global>
-			* {
-				margin: 0;
-				padding: 0;
-				border: 0;
-				box-sizing: border-box;
-			}
-
-			body {
-				font-family: "Manrope Variable", sans-serif;
-				padding: 1rem;
-			}
-		</style>
-	</body>
+		</main>
+	</div>
+</body>
+<style is:global>
+	* {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		box-sizing: border-box;
+	}
+	body {
+		font-family: "Manrope Variable", sans-serif;
+		padding: 1rem;
+	}
+	html {
+		scrollbar-width: thin;
+		scrollbar-color: #38bdf880 #00000000;
+		scroll-behavior: smooth;
+	}
+</style>
 </html>
