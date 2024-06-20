@@ -2,10 +2,10 @@
 import Svg from "../components/Svg.astro";
 ---
 
-<header class="flex items-center gap-4 p-3 bg-sky-50/10 shadow-lg relative z-10 [grid-area:header]">
+<header class="flex items-center gap-4 h-16 px-3 bg-bgs shadow-lg z-50 [grid-area:header] rounded-t-xl sticky top-4">
   <article class="flex items-center justify-between w-full">
-    <a class="menu md:hidden" href="#">
-      <Svg class="w-6 fill-sky-100 transition-colors duration-300 ease-in-out">
+    <a class="menu cursor-pointer md:hidden">
+      <Svg class="w-6 fill-sky-100 transition-colors duration-300 ease-in-out pointer-events-none">
         <path
           d="M480 134.333H170.667C166.158 134.333 161.834 132.542 158.646 129.354C155.458 126.166 153.667 121.842 153.667 117.333C153.667 112.825 155.458 108.501 158.646 105.312C161.834 102.124 166.158 100.333 170.667 100.333H480C484.509 100.333 488.833 102.124 492.021 105.312C495.209 108.501 497 112.825 497 117.333C497 121.842 495.209 126.166 492.021 129.354C488.833 132.542 484.509 134.333 480 134.333Z"
         ></path>
@@ -29,7 +29,6 @@ import Svg from "../components/Svg.astro";
 
     <div class="logo">
       <a class="text-2xl font-extrabold hidden md:block" href="/">Mis<span class="text-sky-400">Peliculas</span><span class="text-xs">.com</span></a>
-      <!-- <a class="text-5xl font-extrabold text-sky-400 md:hidden" href="/">P</a> -->
     </div>
 
     <div class="flex items-center justify-center gap-3 relative">
@@ -70,12 +69,9 @@ import Svg from "../components/Svg.astro";
 </style>
 
 <script>
-  const $input = document.querySelector('.input') as HTMLInputElement
-  const $button = document.querySelector('.icon')
-
-  $button?.addEventListener('click',(e)=>{
-    if($input.value !== ''){
-      console.log($input.value)
-    }
-  })
+  const $menu = document.querySelector(".menu");
+  const $nav = document.querySelector(".nav");
+  $menu?.addEventListener("click", () => {
+    $nav?.classList.toggle("active");
+  });
 </script>
