@@ -3,7 +3,7 @@ import Svg from "../components/Svg.astro";
 import LiNav from "../components/LiNav.astro";
 import SubLi from "../components/SubLi.astro";
 
-const generos = [
+const generos: { link: string; tipo: string }[] = [
     { link: "#", tipo: "Acción" },
     { link: "#", tipo: "Aventura" },
     { link: "#", tipo: "Comedia" },
@@ -17,7 +17,7 @@ const generos = [
     { link: "#", tipo: "Terror" },
 ];
 
-const anios = [
+const anios: { link: string; tipo: string }[] = [
     { link: "#", tipo: "2024" },
     { link: "#", tipo: "2023" },
     { link: "#", tipo: "2022" },
@@ -32,7 +32,7 @@ const anios = [
 ---
 
 <nav
-    class="nav [grid-area:nav] w-1/2 min-h-full max-h-full max-w-[250px] bg-bgs absolute top-0 left-[-100%] z-20 flex flex-col gap-1 rounded-r-xl shadow-l-lg overflow-y-auto scroll-smooth md:relative md:left-0 md:w-full md:min-w-[250px] md:max-h-[100px]"
+    class="nav [grid-area:nav] w-1/2 h-[80dvh] max-w-[250px] bg-bgs fixed top-20 left-[-100%] z-20 flex flex-col gap-1 rounded-r-xl shadow-l-lg overflow-y-auto scroll-smooth md:sticky md:top-20 md:left-0 md:w-full md:min-w-[250px]"
 >
     <h3 class="text-xs text-sky-100/50 uppercase p-4">Navegación</h3>
 
@@ -53,7 +53,7 @@ const anios = [
             </a>
         </li>
 
-        <LiNav opcion="Películas" link="#">
+        <LiNav opcion="Películas">
             <path
                 slot="icono"
                 d="M328.714 371.288C348.549 359.4 350.978 332.709 336.003 317.195V315.281L328.08 311.042L229.503 258.285C206.294 244.715 177 261.437 177 288.427V394.261C177 421.251 206.294 437.973 229.503 424.403L328.08 371.647L328.402 371.475L328.714 371.288ZM269.045 134.333L367.045 36.3334H405.333C408.012 36.3334 410.663 36.4488 413.28 36.675L315.621 134.333H269.045ZM497 128V134.333H418.379L479.076 73.6358C490.347 88.865 497 107.673 497 128ZM264.288 36.3334L166.288 134.333H131.25L230.622 36.3334H264.288ZM15 134.333V128C15 77.4683 56.1349 36.3334 106.667 36.3334H127.14L27.7678 134.333H15ZM497 207V384C497 434.532 455.865 475.667 405.333 475.667H106.667C56.1349 475.667 15 434.532 15 384V207H497Z"
@@ -61,7 +61,7 @@ const anios = [
 
             <ul
                 slot="lista"
-                class="bg-sky-950/50 text-sm flex flex-col pl-4 sublista"
+                class="bg-sky-950/50 text-sm flex flex-col pl-4 subLista subLista_peliculas"
                 id="peliculas"
             >
                 <SubLi subLink="#" name="Todas las películas" />
@@ -70,7 +70,7 @@ const anios = [
             </ul>
         </LiNav>
 
-        <LiNav opcion="Series" link="#">
+        <LiNav opcion="Series">
             <path
                 slot="icono"
                 d="M177 85.3333C177 124.174 145.508 155.667 106.667 155.667C67.8256 155.667 36.3333 124.174 36.3333 85.3333C36.3333 46.4923 67.8256 15 106.667 15C145.508 15 177 46.4923 177 85.3333ZM228.333 85.3333C228.333 46.4923 259.826 15 298.667 15C337.508 15 369 46.4923 369 85.3333C369 124.174 337.508 155.667 298.667 155.667C259.826 155.667 228.333 124.174 228.333 85.3333ZM390.333 298.667V426.667C390.333 465.508 358.841 497 320 497H85.3333C46.4923 497 15 465.508 15 426.667V298.667C15 259.826 46.4923 228.333 85.3333 228.333H320C358.841 228.333 390.333 259.826 390.333 298.667ZM463 429.008V276.101L474.92 264.181C483.095 256.016 497 261.824 497 273.301V431.787C497 443.321 483.075 449.084 474.927 440.935L463 429.008Z"
@@ -78,7 +78,7 @@ const anios = [
 
             <ul
                 slot="lista"
-                class="bg-sky-950/50 text-sm flex flex-col pl-4 sublista"
+                class="bg-sky-950/50 text-sm flex flex-col pl-4 subLista subLista_series"
                 id="series"
             >
                 <SubLi subLink="#" name="Todas las series" />
@@ -87,7 +87,7 @@ const anios = [
             </ul>
         </LiNav>
 
-        <LiNav opcion="Géneros" link="#">
+        <LiNav opcion="Géneros">
             <path
                 slot="icono"
                 d="M480 134.333H170.667C166.158 134.333 161.834 132.542 158.646 129.354C155.458 126.166 153.667 121.842 153.667 117.333C153.667 112.825 155.458 108.501 158.646 105.312C161.834 102.124 166.158 100.333 170.667 100.333H480C484.509 100.333 488.833 102.124 492.021 105.312C495.209 108.501 497 112.825 497 117.333C497 121.842 495.209 126.166 492.021 129.354C488.833 132.542 484.509 134.333 480 134.333Z"
@@ -115,7 +115,7 @@ const anios = [
 
             <ul
                 slot="lista"
-                class="bg-sky-950/50 text-sm flex flex-col pl-4 sublista"
+                class="bg-sky-950/50 text-sm flex flex-col pl-4 subLista subLista_generos"
                 id="generos"
             >
                 {
@@ -128,7 +128,7 @@ const anios = [
             </ul>
         </LiNav>
 
-        <LiNav opcion="Año" link="#">
+        <LiNav opcion="Año">
             <path
                 slot="icono"
                 d="M320 333.333C320 309.287 310.448 286.226 293.444 269.222C276.441 252.219 253.38 242.667 229.333 242.667C205.287 242.667 182.226 252.219 165.222 269.222C148.219 286.226 138.667 309.287 138.667 333.333C138.667 341.82 142.038 349.96 148.039 355.961C154.04 361.962 162.18 365.333 170.667 365.333C179.154 365.333 187.293 361.962 193.294 355.961C199.295 349.96 202.667 341.82 202.667 333.333C202.667 326.261 205.476 319.478 210.477 314.477C215.478 309.476 222.261 306.667 229.333 306.667C236.406 306.667 243.189 309.476 248.19 314.477C253.191 319.478 256 326.261 256 333.333C256 346.667 230.571 365.739 210.133 381.056C176.64 406.187 138.667 434.667 138.667 480C138.667 488.487 142.038 496.626 148.039 502.627C154.04 508.629 162.18 512 170.667 512H288C296.487 512 304.626 508.629 310.628 502.627C316.629 496.626 320 488.487 320 480C320 471.513 316.629 463.374 310.628 457.373C304.626 451.371 296.487 448 288 448H228.267C234.88 442.581 242.027 437.333 248.64 432.277C282.027 407.147 320 378.667 320 333.333Z"
@@ -144,7 +144,7 @@ const anios = [
 
             <ul
                 slot="lista"
-                class="bg-sky-950/50 text-xs flex flex-wrap pl-4 sublista"
+                class="bg-sky-950/50 text-xs flex flex-wrap pl-4 subLista subLista_anios"
                 id="generos"
             >
                 {
@@ -154,39 +154,6 @@ const anios = [
                 }
             </ul>
         </LiNav>
-
-        <script is:inline>
-            const $lisLinks = document.querySelectorAll(".links");
-				const $Sublista = document.querySelectorAll(".sublista");
-
-				$lisLinks.forEach((link) => {
-					link.addEventListener("click", (e) => {
-						e.preventDefault();
-						const $link = e.target
-						const $listaSelecccionada =
-							$link.parentElement?.querySelector(
-								".sublista",
-							)
-
-						if (
-							link.classList.contains("active") &&
-							$listaSelecccionada.classList.contains("active")
-						) {
-							link.classList.remove("active");
-							$listaSelecccionada.classList.remove("active");
-							return;
-						}
-						$lisLinks.forEach((link) =>
-							link.classList.remove("active"),
-						);
-						$Sublista.forEach((lista) =>
-							lista.classList.remove("active"),
-						);
-						link.classList.add("active");
-						$listaSelecccionada.classList.add("active");
-					});
-				});
-        </script>
     </ul>
 </nav>
 
@@ -195,7 +162,37 @@ const anios = [
         scrollbar-width: thin;
         scrollbar-color: #38bdf880 #00000000;
         scroll-behavior: smooth;
-        /* transition: left 500ms cubic-bezier(0, 0.11, 0.35, 2); */
         transition: left 500ms cubic-bezier(0, 0.11, 0.4, 1.2);
+
+        &.active {
+            left: 1rem;
+        }
     }
 </style>
+
+<script>
+    const $literalesNav = document.querySelectorAll(".literal"); //literales principales li
+    const $subListasContainer = document.querySelectorAll(".sublista_container"); //container de SubListas div
+    // const $subListas = document.querySelectorAll(".subLista"); //subListas ul
+
+    $literalesNav.forEach((literal) => {
+        literal.addEventListener("click", () => {
+            const containerActual = literal.children[1]
+            if(literal.classList.contains('active')){
+                literal.classList.remove('active')
+                return
+            }
+            $literalesNav.forEach(li=>li.classList.remove('active'))
+            $subListasContainer.forEach(container=>container.classList.remove('generosHeight', 'aniosHeight'))
+            literal.classList.add('active')
+            
+            if(containerActual.children[0].classList.contains('subLista_generos')){
+                containerActual.classList.add('generosHeight')
+            }
+            if(containerActual.children[0].classList.contains('subLista_anios')){
+                containerActual.classList.add('aniosHeight')
+            }
+
+        });
+    });
+</script>

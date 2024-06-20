@@ -2,40 +2,57 @@
 import Svg from "./Svg.astro"
 interface Props {
     opcion: string
-    link: string
 }
-const { opcion, link } = Astro.props
+const { opcion} = Astro.props
 ---
 
-<li class="li_principal relative">
-    <a class="flex items-center gap-4 text-sky-200 text-sm p-2 px-4 hover:bg-sky-50/10 transition-colors duration-300 ease-in-out links" href={link}>
-        <Svg class="w-4 fill-sky-200 pointer-events-none">
+<li class=" text-sky-200 text-sm  hover:bg-sky-50/10 transition-colors duration-300 ease-in-out links cursor-pointer literal">
+
+    <p class="flex items-center gap-4 p-2 px-4 pointer-events-none">
+        <Svg class="w-full max-w-4 fill-sky-200">
             <slot name="icono"></slot>
         </Svg>
-        <span class="w-full flex justify-between items-center pointer-events-none">
+        <span class="w-full flex justify-between items-center">
             {opcion}
             <Svg class="w-4 fill-sky-200 arrow transition-transform duration-300 ease-in-out">
                 <path d="M219.358 355.083L219.124 354.821L218.877 354.571L81.8891 215.538C73.1081 205.826 71.2806 193.507 76.1451 182.481L76.148 182.475C81.1176 171.196 91.6368 164.333 103.915 164.333H397.141C409.417 164.333 419.939 171.191 424.88 182.439C429.8 193.637 427.824 205.921 419.686 214.977L281.514 355.322L281.271 355.568L281.041 355.825C273.864 363.82 262.544 369 250.539 369C238.652 369 227.287 363.923 219.358 355.083Z"/>
             </Svg>
         </span>
-    </a>
-    <div class="sublista w-full">
+    </p>
+        
+    <div class="sublista_container w-full">
         <slot name="lista"></slot>
+        <!-- primera 108 -->
+        <!-- segundo 108 -->
+        <!-- tercero 396 -->
+        <!-- cuarto 128 -->
     </div>
 </li>
 
 <style>
-    .links.active .arrow{
+    .literal.active .arrow{
         transform: rotate(180deg);
     }
-    .sublista{
+
+    /* sublista */
+    .sublista_container{
         height: 0;
         overflow: hidden;
-        transition: height 500ms ease-in-out;
+        transition: height 300ms ease-in-out;
     }
-    .sublista.active {
-        height: auto;
-        transition: height 500ms ease-in-out;
-        
+    .literal.active .sublista_container{
+        height: 108px;
+    }
+    .literal.active .sublista_container.generosHeight {
+        height: 396px;
+    }
+    .literal.active .sublista_container.aniosHeight {
+        height: 128px;
     }
 </style>
+<script>
+    const $sublista = document.querySelectorAll(".sublista_container");
+
+    $sublista.forEach((sublista) => {
+    });
+</script>
