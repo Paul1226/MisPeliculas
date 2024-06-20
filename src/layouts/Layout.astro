@@ -1,13 +1,14 @@
 ---
-import { ViewTransitions } from "astro:transitions";
+import Header from "../sections/Header.astro";
+import Nav from "../sections/Nav.astro";
+// import { ViewTransitions } from "astro:transitions";
+
 interface Props {
 	title: string;
 }
 
 const { title } = Astro.props;
 
-import Header from "../sections/Header.astro";
-import Nav from "../sections/Nav.astro";
 
 // font
 // Supports weights 200-800
@@ -26,8 +27,8 @@ import "@fontsource-variable/manrope";
 		href="https://cdn-uicons.flaticon.com/2.4.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
 	/>
 	<meta name="generator" content={Astro.generator} />
-	<ViewTransitions fallback="none" />
 	<title>{title}</title>
+	<!-- <ViewTransitions fallback="none" /> -->
 </head>
 <body class="bg-sky-950 text-sky-100">
 	<div
