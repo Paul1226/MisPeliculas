@@ -8,12 +8,12 @@ const { idMovie } = Astro.params;
 const movieFound = movies.find((movie) => movie.title === idMovie);
 if (!movieFound) return Astro.redirect("/404");  
 
-const { title, image, genre, director, actors, synopsis, rating, id, trailer } = movieFound;
+const { title, image, genre, director, actors, synopsis, rating, trailer } = movieFound;
 
 ---
 
 <Layout title="MisPeliculas | Proyecto">
-    <section class="flex flex-col gap-5 md:flex-row overflow-y-auto ver pb-10 h-full w-full items-center md:items-start">
+    <section class="flex flex-col gap-5 lg:flex-row  pb-10 h-full w-full items-center lg:items-start">
         <article
             class="flex flex-col items-center rounded-lg bg-bgs p-4 max-w-[300px] "
             transition:name=`movie ${idMovie} link`
@@ -36,7 +36,7 @@ const { title, image, genre, director, actors, synopsis, rating, id, trailer } =
         </article>
 
         <div class="video w-full h-full">
-            <iframe  class="w-full min-h-full" src={trailer} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe  class="w-full min-h-full aspect-video" src={trailer} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
 </Layout>
