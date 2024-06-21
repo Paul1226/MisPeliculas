@@ -1,14 +1,13 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { movies } from "../../../movies.json";
-import Svg from "../../components/Svg.astro";
 
 const { idMovie } = Astro.params;
 
 const movieFound = movies.find((movie) => movie.title === idMovie);
 if (!movieFound) return Astro.redirect("/404");  
 
-const { title, image, genre, director, actors, synopsis, rating, trailer } = movieFound;
+const { title, image, genre, director, actors, synopsis, trailer } = movieFound;
 
 ---
 
@@ -36,7 +35,7 @@ const { title, image, genre, director, actors, synopsis, rating, trailer } = mov
         </article>
 
         <div class="video w-full h-full">
-            <iframe  class="w-full min-h-full aspect-video" src={trailer} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe  class="w-full min-h-full aspect-video" src={trailer} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
 </Layout>
