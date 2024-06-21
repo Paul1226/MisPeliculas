@@ -30,20 +30,20 @@ import "@fontsource-variable/manrope";
 	<title>{title}</title>
 	<!-- <ViewTransitions fallback="none" /> -->
 </head>
-<body class="bg-sky-950 text-sky-100">
+<body class="bg-sky-950 text-sky-100 p-4 overflow-y-hidden">
 	<div
 		class="w-full rounded-xl grid [grid-template-areas:'header''main'] [grid-template-rows:auto_1fr] h-full"
 	>
 		<Header />
 		<main
-			class="relative grid [grid-template-areas:'content']k
+			class="relative grid [grid-template-areas:'content']
 		[grid-area:main] md:[grid-template-areas:'nav_content'] md:[grid-template-columns:auto_1fr]"
 		>
 			<Nav />
 			<main class="p-4 [grid-area:content] flex flex-col">
 				<div class="flex flex-col gap-4">
 					<header class="py-2 bg-red-5">
-						<h1 class="text-2xl font-bold text-center pb-2">
+						<h1 class="text-2xl font-bold text-center pb-2 text-balance">
 							MIS PELICULAS - VER PELICULAS Y SERIES ONLINE EN
 							HD
 						</h1>
@@ -53,8 +53,15 @@ import "@fontsource-variable/manrope";
 							encuentras aquí y en mayor calidad</span
 						>
 					</header>
-					<main class="">
+					<main class="bg-red-90 w-full h-[460px] overflow-y-auto main_content_movies">
 						<slot />
+						<footer>
+							<p
+								class="text-xs text-sky-50/40 text-center block pt-5"
+							>
+								© 2022 - Esta página fue creada con fines educativos.
+							</p>
+						</footer>
 					</main>
 				</div>
 			</main>
@@ -70,9 +77,8 @@ import "@fontsource-variable/manrope";
 	}
 	body {
 		font-family: "Manrope Variable", sans-serif;
-		padding: 1rem;
 	}
-	html {
+	.main_content_movies {
 		scrollbar-width: thin;
 		scrollbar-color: #38bdf880 #00000000;
 		scroll-behavior: smooth;
