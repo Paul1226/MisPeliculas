@@ -1,0 +1,15 @@
+---
+import { movies } from "../../movies.json";
+import CardMovie from "./CardMovie.astro";
+
+const mayorPopularidad = [...movies].sort((a, b) => b.rating - a.rating).slice(0, 10);
+---
+
+<section class="seccion_peliculas_populares hidden grid-cols-[repeat(auto-fill,minmax(130px,1fr))] gap-5 my-5 w-full">{
+    mayorPopularidad.map(movie => <CardMovie name={movie.title} image={movie.image} rating={movie.rating}/>)}
+
+</section>
+
+<style>
+    .seccion_peliculas_populares.active {display: grid;}
+</style>
