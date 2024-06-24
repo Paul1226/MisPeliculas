@@ -19,3 +19,4 @@ Este proyecto esta creado con fines educativos e ira creciendo poco a poco
 - [_] Mejorar la posición de footer en '[id]Movie.astro'.
 - [_] Crear el funcionamiento del nav en sus sublistas.
 - [_] Mejorar página de error 404.
+- [_] Crear un componenete para generar para las secciones en el main.
