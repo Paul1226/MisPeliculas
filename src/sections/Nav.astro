@@ -171,9 +171,20 @@ const anios: { link: string; tipo: string }[] = [
 </style>
 
 <script>
+    import { findConfigFile } from "typescript";
+import {movies} from "../../movies.json";
     const $literalesNav = document.querySelectorAll(".literal"); //literales principales li
     const $subListasContainer = document.querySelectorAll(".sublista_container"); //container de SubListas div
-    // const $subListas = document.querySelectorAll(".subLista"); //subListas ul
+
+    // sublistas
+    const $subListaPeliculas = document.querySelector(".subLista_peliculas") as HTMLElement;
+    const $subListaSeries = document.querySelector(".subLista_series") as HTMLElement;
+    const $subListaGeneros = document.querySelector(".subLista_generos") as HTMLElement;
+    const $subListaAnios = document.querySelector(".subLista_anios") as HTMLElement;
+
+    // secciones
+    const $seccionPeliculas = document.querySelector(".seccion_peliculas") as HTMLElement;
+    const $seccionSeries = document.querySelector(".seccion_series") as HTMLElement;
 
     $literalesNav.forEach((literal) => {
         literal.addEventListener("click", () => {
@@ -195,4 +206,35 @@ const anios: { link: string; tipo: string }[] = [
 
         });
     });
+
+    function obteniendoHijos(elemento: HTMLElement) {
+        const lista = []
+        for (let i = 0; i < elemento.children.length; i++) {
+            lista.push(elemento.children[i].children[0])
+        }
+        return lista
+    }
+
+    const subMenuPeliculas = obteniendoHijos($subListaPeliculas)
+    subMenuPeliculas?.forEach(link => {
+        link.addEventListener('click', (e)=>{
+            const $seccion = document.querySelector('.seccion') as HTMLElement
+            e.preventDefault()
+
+            if(link.textContent === 'Todas las películas'){
+                $seccion.innerHTML = ''
+                $seccion.appendChild($seccionPeliculas)
+            }else if(link.textContent === 'Más populares'){
+                const $seccionPeliculasPopulares = document.querySelector('.seccion_peliculas_populares') as HTMLElement
+                $seccionPeliculasPopulares.classList.add('active')
+                $seccion.innerHTML = ''
+                $seccion.appendChild($seccionPeliculasPopulares)
+
+                console.log(2)
+            }else{
+                console.log(3)
+            }
+        })
+    })
+
 </script>
