@@ -5,11 +5,14 @@ import SubLi from "../components/SubLi.astro";
 
 const generos: { link: string; tipo: string }[] = [
     { link: "#", tipo: "Acción" },
+    { link: "#", tipo: "Animada" },
     { link: "#", tipo: "Aventura" },
+    { link: "#", tipo: "Ciencia Ficción" },
     { link: "#", tipo: "Comedia" },
     { link: "#", tipo: "Crimen" },
     { link: "#", tipo: "Drama" },
-    { link: "#", tipo: "Fantasia" },
+    { link: "#", tipo: "Familiar" },
+    { link: "#", tipo: "Fantasía" },
     { link: "#", tipo: "Historia" },
     { link: "#", tipo: "Misterio" },
     { link: "#", tipo: "Romance" },
@@ -64,9 +67,9 @@ const anios: { link: string; tipo: string }[] = [
                 class="bg-sky-950/50 text-sm flex flex-col pl-4 subLista subLista_peliculas"
                 id="peliculas"
             >
-                <SubLi subLink="#" name="Todas las películas" />
-                <SubLi subLink="#" name="Más populares" />
-                <SubLi subLink="#" name="Últimos estrenos" />
+                <SubLi subLink="#seccion_peliculas" name="Todas las películas" />
+                <SubLi subLink="#seccion_peliculas_populares" name="Más populares" />
+                <SubLi subLink="#seccion_ultimos_estrenos" name="Últimos estrenos" />
             </ul>
         </LiNav>
 
@@ -81,9 +84,9 @@ const anios: { link: string; tipo: string }[] = [
                 class="bg-sky-950/50 text-sm flex flex-col pl-4 subLista subLista_series"
                 id="series"
             >
-                <SubLi subLink="#" name="Todas las series" />
-                <SubLi subLink="#" name="Series populares" />
-                <SubLi subLink="#" name="Últimos estrenos" />
+                <SubLi subLink="#seccion_series" name="Todas las series" />
+                <SubLi subLink="#seccion_series_populares" name="Series populares" />
+                <SubLi subLink="#seccion_series_estrenos" name="Últimos estrenos" />
             </ul>
         </LiNav>
 
@@ -119,7 +122,7 @@ const anios: { link: string; tipo: string }[] = [
                 id="generos"
             >
                 {
-                    generos.map((genero) => {
+                    [...generos].map((genero) => {
                         return (
                             <SubLi subLink={genero.link} name={genero.tipo} />
                         );
@@ -145,7 +148,7 @@ const anios: { link: string; tipo: string }[] = [
             <ul
                 slot="lista"
                 class="bg-sky-950/50 text-xs flex flex-wrap pl-4 subLista subLista_anios"
-                id="generos"
+                id="anios"
             >
                 {
                     anios.map((anio) => {
@@ -171,20 +174,16 @@ const anios: { link: string; tipo: string }[] = [
 </style>
 
 <script>
-    import { findConfigFile } from "typescript";
-import {movies} from "../../movies.json";
+    // imports 
+    import {movies, series} from "../../movies.json";
+
     const $literalesNav = document.querySelectorAll(".literal"); //literales principales li
     const $subListasContainer = document.querySelectorAll(".sublista_container"); //container de SubListas div
 
+
     // sublistas
-    const $subListaPeliculas = document.querySelector(".subLista_peliculas") as HTMLElement;
-    const $subListaSeries = document.querySelector(".subLista_series") as HTMLElement;
     const $subListaGeneros = document.querySelector(".subLista_generos") as HTMLElement;
     const $subListaAnios = document.querySelector(".subLista_anios") as HTMLElement;
-
-    // secciones
-    const $seccionPeliculas = document.querySelector(".seccion_peliculas") as HTMLElement;
-    const $seccionSeries = document.querySelector(".seccion_series") as HTMLElement;
 
     $literalesNav.forEach((literal) => {
         literal.addEventListener("click", () => {
@@ -207,34 +206,124 @@ import {movies} from "../../movies.json";
         });
     });
 
-    function obteniendoHijos(elemento: HTMLElement) {
-        const lista = []
-        for (let i = 0; i < elemento.children.length; i++) {
-            lista.push(elemento.children[i].children[0])
-        }
-        return lista
-    }
+    const liGenero = $subListaGeneros.querySelectorAll('li .subLink') //literales secoundarios a
 
-    const subMenuPeliculas = obteniendoHijos($subListaPeliculas)
-    subMenuPeliculas?.forEach(link => {
+    // secciones
+    const $seccionContenido = document.querySelector('.seccion_contenido') as HTMLElement
+    
+    liGenero.forEach((link)=>{
         link.addEventListener('click', (e)=>{
-            const $seccion = document.querySelector('.seccion') as HTMLElement
             e.preventDefault()
+            limpiarSeccion ()
 
-            if(link.textContent === 'Todas las películas'){
-                $seccion.innerHTML = ''
-                $seccion.appendChild($seccionPeliculas)
-            }else if(link.textContent === 'Más populares'){
-                const $seccionPeliculasPopulares = document.querySelector('.seccion_peliculas_populares') as HTMLElement
-                $seccionPeliculasPopulares.classList.add('active')
-                $seccion.innerHTML = ''
-                $seccion.appendChild($seccionPeliculasPopulares)
+            const opcion = e.target as HTMLElement
+            const tituloSeccion = opcion.textContent as string
+            const divContenedor = crearSeccion($seccionContenido, tituloSeccion)
+            agregarHijosDiv(divContenedor, tituloSeccion)
 
-                console.log(2)
-            }else{
-                console.log(3)
-            }
         })
     })
 
+    function limpiarSeccion (){
+        const $secciones = document.querySelectorAll('.seccion') as NodeListOf<HTMLElement>
+        $secciones.forEach(seccion => seccion.classList.add('hidden'))
+    }
+
+    function crearSeccion (seccion : HTMLElement, titulo:string){
+        const seccionContainer = document.createElement('section')
+        const tituloContainer = document.createElement('h2')
+        const divContainer = document.createElement('div')
+
+        seccionContainer.classList.add("pt-5", "relative", "before:content-['']", "before:absolute", "before:w-full", "before:h-[2px]", "before:rounded-full", "before:[background-image:linear-gradient(90deg,#38bdf8,#0c4a6e,#0c4a6e,#38bdf8)]", "before:top-0", "w-full", "seccion")
+        tituloContainer.classList.add("text-xl", "font-bold")
+        tituloContainer.textContent = titulo
+        divContainer.classList.add("grid", "grid-cols-[repeat(auto-fill,minmax(130px,1fr))]", "gap-5", "my-5", "w-full")
+
+        seccionContainer.appendChild(tituloContainer)
+        seccionContainer.appendChild(divContainer)
+        seccion.appendChild(seccionContainer)
+
+        return divContainer
+    }
+
+    function agregarHijosDiv (div : HTMLElement, palabra:string){
+        const generos = [...movies, ...series]
+        generos.map(({title, image, rating, genre})=>{
+            if(genre.includes(palabra)){
+                const card = crearCard(title, rating, image)
+                div.appendChild(card)
+            }
+        })
+    }
+
+    function crearCard (tituloCard?:string, rating?:number, image?:string) {
+        const cardArticle = document.createElement('article')
+        cardArticle.classList.add("rounded-lg", "overflow-hidden", "bg-bgs", "hover:shadow-xl", "transition-all", "duration-300", "ease-in-out")
+
+        const figure = document.createElement('figure')
+        figure.classList.add("aspect-ratio-16/9", "overflow-hidden", "relative", "group")
+
+        const img = document.createElement('img')
+        img.classList.add("w-full", "[aspect-ratio:1/1.4]", "object-cover", "group-hover:scale-110", "group-hover:brightness-[.30]", "transition-all", "duration-300", "ease-in-out")
+        img.src = `${image}` // url imgen
+        img.alt = `Image`
+        figure.appendChild(img)
+
+        const a = document.createElement('a')
+        a.classList.add("absolute", "inset-0", "flex", "justify-center", "items-center", "scale-0", "group-hover:scale-100", "transition-all", "duration-300", "ease-in-out", "link")
+        a.href = `movies/${tituloCard}`
+        figure.appendChild(a)
+
+        const svgNS = "http://www.w3.org/2000/svg";
+        const svg = document.createElementNS(svgNS, 'svg')
+        svg.classList.add("w-16", "fill-sky-100")
+        svg.setAttribute('viewBox', '0 0 512 512')
+        svg.setAttribute('fill', 'none')
+        svg.setAttribute('stroke', 'none')
+        svg.setAttribute('stroke-width', '30')
+        svg.setAttribute('stroke-linejoin', 'round')
+
+        const path = document.createElementNS(svgNS, 'path')
+        path.setAttribute('d', 'M231.637 168.355L231.715 168.399L231.793 168.442L341.826 228.693L342.435 229.035C352.586 234.738 358.355 244.69 358.355 256.021C358.355 267.368 352.577 277.281 342.691 282.865L231.58 343.707L231.502 343.75L231.424 343.794C226.759 346.42 221.66 347.709 216.576 347.709C211.267 347.709 205.906 346.32 200.964 343.428L200.958 343.424C191.334 337.797 185.688 327.945 185.688 316.8V195.221C185.688 184.076 191.334 174.224 200.958 168.597L200.96 168.596C210.544 162.99 221.925 162.886 231.637 168.355ZM15 256C15 123.122 123.122 15 256 15C388.878 15 497 123.122 497 256C497 388.878 388.878 497 256 497C123.122 497 15 388.878 15 256ZM27.6667 256C27.6667 381.916 130.084 484.333 256 484.333C381.916 484.333 484.333 381.916 484.333 256C484.333 130.084 381.916 27.6667 256 27.6667C130.084 27.6667 27.6667 130.084 27.6667 256Z')
+
+        svg.appendChild(path)
+        a.appendChild(svg)
+
+
+        const footer = document.createElement('footer')
+        footer.classList.add("flex", "flex-col", "gap-2", "px-4", "py-2")
+
+        const h3 = document.createElement('h3')
+        h3.classList.add("text-center", "truncate", "text-sm")
+        h3.textContent = `${tituloCard}`
+        footer.appendChild(h3)
+
+        const span = document.createElement('span')
+        span.classList.add("flex", "items-center", "gap-2", "text-xs")
+
+        const svg2 = document.createElementNS(svgNS, 'svg')
+        svg2.classList.add("w-4", "fill-yellow-500","order-1")
+        svg2.setAttribute('viewBox', '0 0 512 512')
+        svg2.setAttribute('fill', 'none')
+        svg2.setAttribute('stroke', 'none')
+        svg2.setAttribute('stroke-width', '30')
+        svg2.setAttribute('stroke-linejoin', 'round')
+
+        const path2 = document.createElementNS(svgNS,'path')
+        path2.setAttribute('d', 'M74.2806 279.533H74.3256L37.2477 252.425C28.0853 245.726 21.2742 236.303 17.7872 225.501C14.3003 214.7 14.3158 203.073 17.8317 192.281C21.3476 181.49 28.1839 172.085 37.3642 165.41C46.5418 158.738 57.5927 155.136 68.9393 155.117C68.9426 155.117 68.946 155.117 68.9493 155.117L162.133 155.117H173.074L176.416 144.7L204.726 56.4652L204.727 56.4612C208.209 45.5985 215.05 36.1223 224.266 29.3991C233.481 22.6759 244.593 19.0531 256 19.0531C267.407 19.0531 278.519 22.6759 287.734 29.3991C296.95 36.1223 303.791 45.5985 307.273 56.4612L307.274 56.4652L335.584 144.7L338.926 155.117H349.867L443.136 155.117C443.139 155.117 443.143 155.117 443.146 155.117C454.493 155.136 465.543 158.738 474.721 165.41C483.901 172.085 490.738 181.49 494.254 192.281C497.769 203.073 497.785 214.7 494.298 225.501C490.812 236.3 484.003 245.721 474.844 252.42C474.842 252.422 474.84 252.423 474.838 252.425L398.897 307.887L390.136 314.285L393.47 324.609L422.312 413.931C422.312 413.932 422.312 413.932 422.312 413.932C425.811 424.77 425.784 436.438 422.234 447.259C418.683 458.081 411.793 467.498 402.553 474.156C393.314 480.815 382.2 484.372 370.812 484.317C359.423 484.261 348.345 480.596 339.171 473.847L339.166 473.844L264.883 419.252L255.993 412.719L247.109 419.258L172.847 473.914L172.777 473.966L172.708 474.018C163.625 480.866 152.573 484.597 141.198 484.654C129.822 484.711 118.733 481.091 109.583 474.333L109.443 474.23L109.3 474.13C99.9894 467.582 93.0438 458.201 89.4991 447.384C85.9544 436.567 86.0004 424.895 89.6302 414.106L89.6594 414.019L89.6876 413.932L118.53 324.609L121.864 314.285L113.103 307.887L74.2806 279.533Z')
+        svg2.appendChild(path2)
+
+        const spanRting = document.createElement('span')
+        spanRting.classList.add('order-2')
+        spanRting.textContent = `${rating}`
+
+        span.appendChild(svg2)
+        span.appendChild(spanRting)
+        footer.appendChild(span)
+
+        cardArticle.appendChild(figure)
+        cardArticle.appendChild(footer)
+        return cardArticle
+
+    }
 </script>
