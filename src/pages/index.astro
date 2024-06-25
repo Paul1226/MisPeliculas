@@ -4,13 +4,18 @@ import AllMovies from "../components/AllMovies.astro";
 import AllSeries from "../components/AllSeries.astro";
 import PeliculasPopulares from "../components/PeliculasPopulares.astro";
 import UltimosEstrenos from "../components/UltimosEstrenos.astro";
+import SeriesPopulares from "../components/SeriesPopulares.astro";
+import UltimoEstrenosSeries from "../components/UltimoEstrenosSeries.astro";
+import Svg from "../components/Svg.astro";
 ---
 
 <Layout title="MisPeliculas | Proyecto">
-	<section class="seccion">
+    <section class="seccion_contenido">
         <AllMovies />
-        <AllSeries />
         <PeliculasPopulares />
         <UltimosEstrenos />
+        <AllSeries />
+        <SeriesPopulares />
+        <UltimoEstrenosSeries />
     </section>
 </Layout>
