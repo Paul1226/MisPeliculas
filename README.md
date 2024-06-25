@@ -20,3 +20,5 @@ Este proyecto esta creado con fines educativos e ira creciendo poco a poco
 - [_] Crear el funcionamiento del nav en sus sublistas.
 - [_] Mejorar página de error 404.
 - [_] Crear un componenete para generar para las secciones en el main.
+- [_] Verficar los enlaces #seccion despues de las generos.
+- [_] Activar sublista de anios.
