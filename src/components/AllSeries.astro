@@ -1,17 +1,13 @@
 ---
+import SectionMain from "./SectionMain.astro"
 import CardMovie from "./CardMovie.astro"
 import {series} from "../../movies.json"
 ---
 
-<section class="pt-5 relative before:content-[''] before:absolute before:w-full before:h-[2px] before:rounded-full before:[background-image:linear-gradient(90deg,#38bdf8,#0c4a6e,#0c4a6e,#38bdf8)] before:top-0 seccion_series">
-    <h2 class="pb-4 text-xl font-bold">Series</h2>
-
-    <div class="grid grid-cols-[repeat(auto-fill,minmax(130px,1fr))] gap-5">
-        {
-            series.map(serie=>{
-                return <CardMovie name={serie.title} image={serie.image} rating={serie.rating}/>
-            })
-        }
-    </div>
-
-</section>
+<SectionMain idSection="seccion_series" title="Series">
+    {
+        [...series].map(serie=>{
+            return <CardMovie name={serie.title} image={serie.image} rating={serie.rating}/>
+        })
+    }
+</SectionMain>
