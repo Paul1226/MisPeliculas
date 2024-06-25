@@ -1,0 +1,13 @@
+---
+import SectionMain from "./SectionMain.astro";
+import { movies } from "../../movies.json"
+import CardMovie from "./CardMovie.astro";
+---
+
+<SectionMain idSection="seccion_ultimos_estrenos" title="Películas - Últimos Estrenos">
+    {
+        [...movies].map(movie => {
+            if(movie.release_date >= "2015-01-01" && movie.rating >= 7.8) return <CardMovie name={movie.title} image={movie.image} rating={movie.rating}/>
+        })
+    }
+</SectionMain>
