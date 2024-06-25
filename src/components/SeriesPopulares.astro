@@ -1,0 +1,11 @@
+---
+import SectionMain from "./SectionMain.astro";
+import { series } from "../../movies.json";
+import CardMovie from "./CardMovie.astro";
+---
+
+<SectionMain idSection="seccion_series_populares" title="Más populares">
+    {
+        [...series].sort((a, b) => b.rating - a.rating).slice(0, 10).map(serie => <CardMovie name={serie.title} image={serie.image} rating={serie.rating}/>)
+    }
+</SectionMain>
