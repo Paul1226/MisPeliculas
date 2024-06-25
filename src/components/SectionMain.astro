@@ -1,0 +1,15 @@
+---
+export interface Props {
+    idSection: string,
+    title: string
+}
+const { idSection, title } = Astro.props
+---
+
+<section class="pt-5 relative before:content-[''] before:absolute before:w-full before:h-[2px] before:rounded-full before:[background-image:linear-gradient(90deg,#38bdf8,#0c4a6e,#0c4a6e,#38bdf8)] before:top-0 w-full seccion principales" id={idSection}>
+    <h2 class="text-xl font-bold">{title}</h2>
+
+    <div class="grid grid-cols-[repeat(auto-fill,minmax(130px,1fr))] gap-5 my-5 w-full">
+        <slot/>
+    </div>
+</section>
