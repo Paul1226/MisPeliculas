@@ -9,7 +9,6 @@ interface Props {
 
 const { title } = Astro.props;
 
-
 // font
 // Supports weights 200-800
 import "@fontsource-variable/manrope";
@@ -17,71 +16,76 @@ import "@fontsource-variable/manrope";
 
 <!doctype html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="description" content="Astro description" />
-	<meta name="viewport" content="width=device-width" />
-	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-	<link
-		rel="stylesheet"
-		href="https://cdn-uicons.flaticon.com/2.4.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
-	/>
-	<meta name="generator" content={Astro.generator} />
-	<title>{title}</title>
-	<!-- <ViewTransitions fallback="none" /> -->
-</head>
-<body class="bg-sky-950 text-sky-100 p-4 overflow-y-hidden">
-	<div
-		class="w-full rounded-xl grid [grid-template-areas:'header''main'] [grid-template-rows:auto_1fr] h-full"
-	>
-		<Header />
-		<main
-			class="relative grid [grid-template-areas:'content']
-		[grid-area:main] md:[grid-template-areas:'nav_content'] md:[grid-template-columns:auto_1fr]"
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/2.4.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
+		/>
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<!-- <ViewTransitions fallback="none" /> -->
+	</head>
+	<body class="bg-sky-950 text-sky-100 relative">
+		<div
+			class="rounded-xl overflow-hidden grid [grid-template-areas:'header''main'] [grid-template-rows:auto_1fr] fixed inset-4"
 		>
-			<Nav />
-			<main class="p-4 [grid-area:content] flex flex-col">
-				<div class="flex flex-col gap-4">
-					<header class="py-2 bg-red-5">
-						<h1 class="text-2xl font-bold text-center pb-2 text-balance">
-							MIS PELICULAS - VER PELICULAS Y SERIES ONLINE EN
-							HD
+			<Header />
+			<main
+				class="[grid-area:main] relative grid grid-cols-1 [grid-template-areas:'content']
+			md:[grid-template-areas:'nav_content'] md:[grid-template-columns:auto_1fr]"
+			>
+				<Nav />
+				<main
+					class="[grid-area:content] flex flex-col gap-y-4 bg-red-5 h-full"
+				>
+					<header
+						class="p-4 header-sd h-[120px] grid place-content-center"
+					>
+						<h1
+							class="text-2xl font-bold pb-2 text-balance text-center"
+						>
+							MIS PELICULAS - VER PELICULAS Y SERIES ONLINE EN HD
 						</h1>
-						<span
-							class="text-xs text-sky-50/50 text-center block"
-							>Todas las mejores películas y series las
-							encuentras aquí y en mayor calidad</span
+						<span class="text-xs text-sky-50/50 block text-center"
+							>Todas las mejores películas y series las encuentras
+							aquí y en mayor calidad</span
 						>
 					</header>
-					<main class="bg-red-90 w-full h-[460px] overflow-y-auto main_content_movies">
+					<main
+						class="w-full pl-4 overflow-y-auto main_content_movies bg-red-40 [flex-grow:1] h-[300px]"
+					>
 						<slot />
 						<footer>
 							<p
 								class="text-xs text-sky-50/40 text-center block pt-5"
 							>
-								© 2022 - Esta página fue creada con fines educativos.
+								© 2022 - Esta página fue creada con fines
+								educativos.
 							</p>
 						</footer>
 					</main>
-				</div>
+				</main>
 			</main>
-		</main>
-	</div>
-</body>
-<style is:global>
-	* {
-		margin: 0;
-		padding: 0;
-		border: 0;
-		box-sizing: border-box;
-	}
-	body {
-		font-family: "Manrope Variable", sans-serif;
-	}
-	.main_content_movies {
-		scrollbar-width: thin;
-		scrollbar-color: #38bdf880 #00000000;
-		scroll-behavior: smooth;
-	}
-</style>
+		</div>
+	</body>
+	<style is:global>
+		* {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			box-sizing: border-box;
+		}
+		body {
+			font-family: "Manrope Variable", sans-serif;
+		}
+		.main_content_movies {
+			scrollbar-width: thin;
+			scrollbar-color: #38bdf880 #00000000;
+			scroll-behavior: smooth;
+		}
+	</style>
 </html>
