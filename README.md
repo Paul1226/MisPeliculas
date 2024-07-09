@@ -22,3 +22,4 @@ Este proyecto esta creado con fines educativos e ira creciendo poco a poco
 - [_] Crear un componenete para generar para las secciones en el main.
 - [_] Verficar los enlaces #seccion despues de las generos.
 - [_] Activar sublista de anios.
+- [_] Navegacion desde /movie/pelicula a la página principal pero en acción a los links de la lista generos.
